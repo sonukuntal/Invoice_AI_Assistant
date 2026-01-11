@@ -16,11 +16,10 @@ def _empty_invoice():
 
 def extract_invoice_data_llm(text: str) -> dict:
     prompt = f"""
-You are an invoice data extraction engine.
+You are an invoice extraction engine.
 
-Extract the following fields and return ONLY valid JSON.
+Extract the following fields from the invoice text below:
 
-Fields:
 - invoice_number
 - account_number
 - customer_name
@@ -28,14 +27,28 @@ Fields:
 - total_amount
 - currency
 
-Rules:
-- Use null if a field is missing
-- Do NOT explain anything
-- JSON keys must be snake_case
+RULES:
+1. Return ONLY valid JSON
+2. Do NOT add explanations
+3. Do NOT use markdown
+4. If a field is missing, use null
+
+JSON format:
+{{
+  "invoice_number": string | null,
+  "account_number": string | null,
+  "customer_name": string | null,
+  "invoice_date": string | null,
+  "total_amount": number | null,
+  "currency": string | null
+}}
 
 Invoice text:
+\"\"\"
 {text}
+\"\"\"
 """
+
 
     try:
         response = ollama.chat(

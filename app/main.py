@@ -27,5 +27,5 @@ def process_invoice(pdf_path: str):
 
 
 if __name__ == "__main__":
-    result = process_invoice("data/invoices/sample_invoice_1.pdf")
+    result = process_invoice("data/invoices/sample_ocr.pdf")
     print(result)
