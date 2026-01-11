@@ -1,3 +1,4 @@
+from config import INVOICE_PDF_DIR
 from services.detectpdf_service import is_text_pdf
 from services.extraction_ocr_service import extract_text_ocr
 from services.extraction_simple_service import extract_text_pdfplumber
@@ -31,5 +32,5 @@ def process_invoice(pdf_path: str):
 
 
 if __name__ == "__main__":
-    result = process_invoice("data/invoices/sample_ocr.pdf")
+    result = process_invoice(INVOICE_PDF_DIR)
     print(result)

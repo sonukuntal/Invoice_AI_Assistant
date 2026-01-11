@@ -1,6 +1,7 @@
 import json
 import ollama
 import logging
+from config import LLM_MODEL_NAME
 
 
 def _empty_invoice():
@@ -52,7 +53,7 @@ Invoice text:
 
     try:
         response = ollama.chat(
-            model="qwen2.5:1.5b",
+            model=LLM_MODEL_NAME,
             messages=[
                 {"role": "system", "content": "Extract structured invoice data."},
                 {"role": "user", "content": prompt}
@@ -69,5 +70,5 @@ Invoice text:
 
     except Exception as e:
         # Common cause: ollama daemon not running or model not available.
-        logging.warning("ollama call failed (%s). Returning empty invoice. To use Ollama, run the Ollama daemon and ensure model 'phi3' is installed.", e)
+        logging.warning("ollama call failed (%s). Returning empty invoice. To use Ollama, run the Ollama daemon and ensure model 'qwen2.5:1.5b' is installed.", e)
         return _empty_invoice()

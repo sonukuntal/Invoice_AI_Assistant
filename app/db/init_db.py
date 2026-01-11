@@ -1,8 +1,9 @@
 import sqlite3
+from config import DB_PATH
 
-DB_PATH = "data/invoices.db"
+Database_Path = DB_PATH
 
-conn = sqlite3.connect(DB_PATH)
+conn = sqlite3.connect(Database_Path)
 cursor = conn.cursor()
 
 cursor.execute("""

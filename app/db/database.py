@@ -1,11 +1,12 @@
 import sqlite3
 import json
+from config import DB_PATH
 
-DB_PATH = "data/invoices.db"
+Database_Path = DB_PATH
 
 
 def save_invoice(invoice: dict):
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(Database_Path)
     cursor = conn.cursor()
 
     cursor.execute("""
