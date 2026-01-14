@@ -9,7 +9,7 @@ DB_NAME = "invoices.db"
 DB_PATH = BASE_DIR / "data" / DB_NAME
 
 # INVOICE FILE STORAGE
-INVOICE_PDF_DIR = BASE_DIR / "data" / "invoices" / "sample_ocr.pdf"
+INVOICE_PDF_DIR = BASE_DIR / "data" / "invoices" / "sample_invoice_2.pdf"
 
 # LLM / AI CONFIG
 LLM_MODEL_NAME = "qwen2.5:1.5b"  # tinyllama / phi-3 / mistral

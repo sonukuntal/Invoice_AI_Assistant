@@ -1,38 +1,33 @@
-import sqlite3
-import json
+from models.invoice_schema import InvoiceSchema
 from config import DB_PATH
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from models.invoice_db import Base, Invoice
 
-Database_Path = DB_PATH
+Database_Path = f"sqlite:///{DB_PATH}"
+engine = create_engine(Database_Path, echo=True)
+SessionLocal = sessionmaker(bind=engine)
 
+def init_db():
+    Base.metadata.create_all(bind=engine)
 
-def save_invoice(invoice: dict):
-    conn = sqlite3.connect(Database_Path)
-    cursor = conn.cursor()
+def save_invoice(invoice_data: InvoiceSchema) -> Invoice:
+    session = SessionLocal()
+    try:
+        invoice_dict = invoice_data.model_dump()
 
-    cursor.execute("""
-        INSERT INTO invoices (
-            invoice_number,
-            vendor_name,
-            invoice_date,
-            total_amount,
-            currency,
-            status,
-            is_duplicate,
-            risk_score,
-            raw_json
-        )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-    """, (
-        invoice.get("invoice_number"),
-        invoice.get("vendor_name"),
-        invoice.get("invoice_date"),
-        invoice.get("total_amount"),
-        invoice.get("currency"),
-        invoice.get("status", "REVIEW"),
-        invoice.get("is_duplicate"),
-        invoice.get("risk_score"),
-        json.dumps(invoice)
-    ))
+        # Extract nested invoice fields
+        base_invoice = invoice_dict.pop("invoice")
 
-    conn.commit()
-    conn.close()
+        # Merge all fields
+        final_data = {**base_invoice, **invoice_dict}
+        invoice = Invoice(**final_data)
+        session.add(invoice)
+        session.commit()
+        session.refresh(invoice)
+        return invoice
+    except Exception as e:
+        session.rollback()
+        raise
+    finally:
+        session.close()

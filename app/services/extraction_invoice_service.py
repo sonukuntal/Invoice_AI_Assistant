@@ -1,28 +1,33 @@
 import json
-import ollama
 import logging
+import ollama
+from datetime import date,datetime
 from config import LLM_MODEL_NAME
+from models.invoice_schema import InvoiceSchema
 
 
-def _empty_invoice():
-    return {
-        "invoice_number": None,
-        "account_number": None,
-        "customer_name": None,
-        "invoice_date": None,
-        "total_amount": None,
-        "currency": None,
-    }
+def _empty_invoice_schema() -> InvoiceSchema:
+    return InvoiceSchema()
 
+def parse_invoice_date(value: str | None):
+    if not value:
+        return None
 
-def extract_invoice_data_llm(text: str) -> dict:
+    for fmt in ("%Y-%m-%d", "%d-%m-%Y", "%d/%m/%Y"):
+        try:
+            return datetime.strptime(value, fmt).date()
+        except ValueError:
+            continue
+
+    return None
+
+def extract_invoice_data_llm(text: str) -> InvoiceSchema:
     prompt = f"""
 You are an invoice extraction engine.
 
 Extract the following fields from the invoice text below:
 
 - invoice_number
-- account_number
 - customer_name
 - invoice_date
 - total_amount
@@ -37,7 +42,6 @@ RULES:
 JSON format:
 {{
   "invoice_number": string | null,
-  "account_number": string | null,
   "customer_name": string | null,
   "invoice_date": string | null,
   "total_amount": number | null,
@@ -49,7 +53,6 @@ Invoice text:
 {text}
 \"\"\"
 """
-
 
     try:
         response = ollama.chat(
@@ -63,12 +66,21 @@ Invoice text:
         content = response["message"]["content"]
 
         try:
-            return json.loads(content)
-        except json.JSONDecodeError:
-            logging.warning("LLM did not return valid JSON; falling back to empty invoice")
-            return _empty_invoice()
+            raw_data = json.loads(content)
+
+            # Convert string date → date object (important)
+            if raw_data.get("invoice_date"):
+                raw_data["invoice_date"] = parse_invoice_date(
+                raw_data.get("invoice_date")
+                )   
+
+            #Return validated schema
+            return InvoiceSchema(**raw_data)
+
+        except (json.JSONDecodeError, ValueError) as e:
+            logging.warning("Invalid LLM response format: %s", e)
+            return _empty_invoice_schema()
 
     except Exception as e:
-        # Common cause: ollama daemon not running or model not available.
-        logging.warning("ollama call failed (%s). Returning empty invoice. To use Ollama, run the Ollama daemon and ensure model 'qwen2.5:1.5b' is installed.", e)
-        return _empty_invoice()
+        logging.warning("Ollama call failed: %s", e)
+        return _empty_invoice_schema()
