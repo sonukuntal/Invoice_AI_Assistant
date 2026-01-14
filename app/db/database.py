@@ -14,7 +14,9 @@ def init_db():
 def save_invoice(invoice_data: InvoiceSchema) -> Invoice:
     session = SessionLocal()
     try:
-        invoice_dict = invoice_data.model_dump()
+        invoice_dict = (
+        invoice_data if isinstance(invoice_data, dict)
+        else invoice_data.model_dump())
 
         # Extract nested invoice fields
         base_invoice = invoice_dict.pop("invoice")

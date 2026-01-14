@@ -1,4 +1,7 @@
-from config import INVOICE_PDF_DIR
+from services.excel_loader_service import load_invoice_excel
+from services.excel_agent_service import execute_excel_query, llm_excel_query_agent
+from services.merge_invoice import merge_invoice
+from config import INVOICE_PDF_DIR, Excel_PATH
 from services.detectpdf_service import is_text_pdf
 from services.extraction_ocr_service import extract_text_ocr
 from services.extraction_simple_service import extract_text_pdfplumber
@@ -25,10 +28,18 @@ def process_invoice(pdf_path: str):
     if validation_result.is_valid:
         print("Enriching invoice...")
         enriched_data = enrich_invoice(validation_result.invoice)
+        print("Loading invoice Excel data...")
+        excel_df = load_invoice_excel(Excel_PATH)
+        print("Querying Excel data with LLM agent...")
+        agent_plan = llm_excel_query_agent(enriched_data, excel_df)
+        print("Executing Excel query...")
+        excel_data = execute_excel_query(agent_plan, excel_df)
+        print("Merging invoice data...")
+        final_invoice = merge_invoice(enriched_data, excel_data)       
         print("Saving invoice to database...")
-        save_invoice(enriched_data)
+        save_invoice(final_invoice)
         print("Invoice processed successfully")
-        return enriched_data
+        return final_invoice
     
     else:
         print("Invoice invalid:", validation_result.errors)

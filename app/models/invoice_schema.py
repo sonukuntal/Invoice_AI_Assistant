@@ -7,5 +7,7 @@ class InvoiceSchema(BaseModel):
     vendor_name: Optional[str] = None
     customer_name: Optional[str] = None
     invoice_date: Optional[date] = None
+    due_date: Optional[date] = None
+    payment_status: Optional[str] = None
     total_amount: Optional[float] = None
     currency: Optional[str] = None

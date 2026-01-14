@@ -2,6 +2,7 @@ import json
 import logging
 import ollama
 from datetime import date,datetime
+from utils.date_utils import parse_date
 from config import LLM_MODEL_NAME
 from models.invoice_schema import InvoiceSchema
 
@@ -9,17 +10,6 @@ from models.invoice_schema import InvoiceSchema
 def _empty_invoice_schema() -> InvoiceSchema:
     return InvoiceSchema()
 
-def parse_invoice_date(value: str | None):
-    if not value:
-        return None
-
-    for fmt in ("%Y-%m-%d", "%d-%m-%Y", "%d/%m/%Y"):
-        try:
-            return datetime.strptime(value, fmt).date()
-        except ValueError:
-            continue
-
-    return None
 
 def extract_invoice_data_llm(text: str) -> InvoiceSchema:
     prompt = f"""
@@ -70,9 +60,13 @@ Invoice text:
 
             # Convert string date → date object (important)
             if raw_data.get("invoice_date"):
-                raw_data["invoice_date"] = parse_invoice_date(
+                raw_data["invoice_date"] = parse_date(
                 raw_data.get("invoice_date")
-                )   
+                )
+                if raw_data.get("due_date"):
+                    raw_data["due_date"] = parse_date(
+                    raw_data.get("due_date")
+                )
 
             #Return validated schema
             return InvoiceSchema(**raw_data)

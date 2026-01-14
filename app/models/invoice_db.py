@@ -13,6 +13,10 @@ class Invoice(Base):
     invoice_date = Column(Date)
     total_amount = Column(Float)
     risk_score = Column(String)
+    payment_status = Column(String)
+    due_date = Column(Date)
+    shipping_reference = Column(String)
     vendor_category = Column(String)
     currency = Column(String, default="INR")
     status = Column(String, default="NEW")
+    
