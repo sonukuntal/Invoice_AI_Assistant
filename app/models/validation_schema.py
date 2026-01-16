@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from models.invoice_schema import InvoiceSchema
+from app.models.invoice_schema import InvoiceSchema
 
 class InvoiceValidationResult(BaseModel):
     invoice: InvoiceSchema

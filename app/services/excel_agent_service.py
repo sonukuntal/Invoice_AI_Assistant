@@ -1,7 +1,7 @@
 import logging
 import ollama
 import json
-from utils.llm_utils import safe_json_parse
+from app.utils.llm_utils import safe_json_parse
 
 def llm_excel_query_agent(invoice, df):
     prompt = f"""

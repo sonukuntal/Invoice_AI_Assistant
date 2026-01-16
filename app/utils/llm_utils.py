@@ -1,6 +1,8 @@
 import json
 import re
-import logging
+from app.utils.logger import get_logger
+
+logging = get_logger(__name__)
 
 def safe_json_parse(text: str):
     if not text:

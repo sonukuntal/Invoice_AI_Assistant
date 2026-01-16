@@ -1,6 +1,8 @@
 import sqlite3
-from config import DB_PATH
+from app.config import DB_PATH
+from app.utils import get_logger
 
+logger = get_logger(__name__)
 Database_Path = DB_PATH
 
 conn = sqlite3.connect(Database_Path)
@@ -30,4 +32,4 @@ CREATE TABLE IF NOT EXISTS invoices (
 conn.commit()
 conn.close()
 
-print("Invoice database initialized")
+logger.info("Invoice database initialized")

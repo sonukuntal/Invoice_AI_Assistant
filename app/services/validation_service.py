@@ -1,5 +1,5 @@
-from models.validation_schema import InvoiceValidationResult
-from models.invoice_schema import InvoiceSchema
+from app.models.validation_schema import InvoiceValidationResult
+from app.models.invoice_schema import InvoiceSchema
 
 def validate_invoice(invoice: InvoiceSchema) -> InvoiceValidationResult:
     errors = []

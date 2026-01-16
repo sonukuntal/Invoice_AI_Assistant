@@ -1,0 +1,232 @@
+2026-01-16 10:45:09,064 | INFO | __main__ | Database initialized successfully
+2026-01-16 10:45:09,072 | INFO | __main__ | Extracting text...
+2026-01-16 10:45:09,094 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 10:45:24,716 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-16 10:45:24,716 | WARNING | app.services.extraction_invoice_service | Ollama call failed: No active exception to reraise
+2026-01-16 10:45:24,716 | INFO | __main__ | Validating invoice...
+2026-01-16 10:47:01,787 | INFO | __main__ | Database initialized successfully
+2026-01-16 10:47:01,787 | INFO | __main__ | Extracting text...
+2026-01-16 10:47:01,816 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 10:47:06,535 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-16 10:47:06,535 | WARNING | app.services.extraction_invoice_service | Ollama call failed: No active exception to reraise
+2026-01-16 10:47:06,535 | INFO | __main__ | Validating invoice...
+2026-01-16 10:50:31,390 | INFO | __main__ | Database initialized successfully
+2026-01-16 10:50:31,390 | INFO | __main__ | Extracting text...
+2026-01-16 10:50:31,419 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 10:50:35,708 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-16 10:50:35,708 | WARNING | app.services.extraction_invoice_service | Ollama call failed: No active exception to reraise
+2026-01-16 10:50:35,708 | INFO | __main__ | Validating invoice...
+2026-01-16 10:50:35,711 | ERROR | __main__ | Invoice invalid:['Missing invoice_number', 'Invalid total_amount']
+NoneType: None
+2026-01-16 11:11:12,712 | INFO | __main__ | Database initialized successfully
+2026-01-16 11:11:12,712 | INFO | __main__ | Extracting text...
+2026-01-16 11:11:12,756 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 11:11:28,187 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-16 11:11:28,187 | INFO | __main__ | Validating invoice...
+2026-01-16 11:11:28,187 | INFO | __main__ | Enriching invoice...
+2026-01-16 11:11:28,187 | INFO | __main__ | Loading invoice Excel data...
+2026-01-16 11:11:28,566 | INFO | __main__ | Querying Excel data with LLM agent...
+2026-01-16 11:11:59,113 | INFO | __main__ | Executing Excel query...
+2026-01-16 11:11:59,113 | INFO | __main__ | Merging invoice data...
+2026-01-16 11:11:59,113 | INFO | __main__ | Saving invoice to database...
+2026-01-16 11:11:59,120 | INFO | app.db.database | Saving invoice to database
+2026-01-16 11:11:59,137 | ERROR | app.db.database | Database insert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: invoices.invoice_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 35, in save_invoice
+    session.commit()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: invoices.invoice_number
+[SQL: INSERT INTO invoices (invoice_number, vendor_name, customer_name, invoice_date, total_amount, risk_score, payment_status, due_date, shipping_reference, vendor_category, currency, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('INV-1001', None, 'John Doe', '2025-09-15', 1250.0, 'LOW', 'Paid', '2025-01-10', 'SHIP-22', 'STANDARD', '$', 'NEW')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-16 11:22:26,507 | INFO | __main__ | Database initialized successfully
+2026-01-16 11:22:26,509 | INFO | __main__ | Extracting text...
+2026-01-16 11:22:26,542 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 11:22:40,464 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-16 11:22:40,464 | INFO | __main__ | Validating invoice...
+2026-01-16 11:22:40,464 | INFO | __main__ | Enriching invoice...
+2026-01-16 11:22:40,464 | INFO | __main__ | Loading invoice Excel data...
+2026-01-16 11:22:40,845 | INFO | __main__ | Querying Excel data with LLM agent...
+2026-01-16 11:23:08,084 | INFO | __main__ | Executing Excel query...
+2026-01-16 11:23:08,084 | INFO | __main__ | Merging invoice data...
+2026-01-16 11:23:08,084 | INFO | __main__ | Saving invoice to database...
+2026-01-16 11:23:08,084 | INFO | app.db.database | Saving invoice to database
+2026-01-16 11:23:08,102 | ERROR | app.db.database | Database insert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: invoices.invoice_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 35, in save_invoice
+    session.commit()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: invoices.invoice_number
+[SQL: INSERT INTO invoices (invoice_number, vendor_name, customer_name, invoice_date, total_amount, risk_score, payment_status, due_date, shipping_reference, vendor_category, currency, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('INV-1001', None, 'John Doe', '2025-09-15', 1250.0, 'LOW', 'Unpaid', '2025-10-10', None, 'STANDARD', 'USD', 'NEW')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-16 11:30:24,792 | INFO | __main__ | Database initialized successfully
+2026-01-16 11:30:24,792 | INFO | __main__ | Extracting text...
+2026-01-16 11:30:24,814 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 11:30:38,701 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-16 11:30:38,701 | INFO | __main__ | Validating invoice...
+2026-01-16 11:30:38,701 | INFO | __main__ | Enriching invoice...
+2026-01-16 11:30:38,701 | INFO | __main__ | Loading invoice Excel data...
+2026-01-16 11:30:39,049 | INFO | __main__ | Querying Excel data with LLM agent...
+2026-01-16 11:31:03,198 | INFO | __main__ | Executing Excel query...
+2026-01-16 11:31:03,198 | INFO | __main__ | Merging invoice data...
+2026-01-16 11:31:03,198 | INFO | __main__ | Saving invoice to database...
+2026-01-16 11:31:03,198 | INFO | app.db.database | Saving invoice to database
+2026-01-16 11:31:03,245 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-16 11:31:03,256 | INFO | __main__ | Invoice processed successfully
+2026-01-16 11:32:29,948 | INFO | __main__ | Database initialized successfully
+2026-01-16 11:32:29,948 | INFO | __main__ | Extracting text...
+2026-01-16 11:32:29,985 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 11:32:40,593 | ERROR | app.utils.date_utils | Invalid date format: 20/09/2025
+2026-01-16 11:32:40,593 | INFO | __main__ | Validating invoice...
+2026-01-16 11:32:40,593 | INFO | __main__ | Enriching invoice...
+2026-01-16 11:32:40,593 | INFO | __main__ | Loading invoice Excel data...
+2026-01-16 11:32:40,828 | INFO | __main__ | Querying Excel data with LLM agent...
+2026-01-16 11:33:06,895 | INFO | __main__ | Executing Excel query...
+2026-01-16 11:33:06,895 | INFO | __main__ | Merging invoice data...
+2026-01-16 11:33:06,895 | INFO | __main__ | Saving invoice to database...
+2026-01-16 11:33:06,895 | INFO | app.db.database | Saving invoice to database
+2026-01-16 11:33:06,914 | INFO | app.db.database | Updating existing invoice INV-1002
+2026-01-16 11:33:06,933 | INFO | __main__ | Invoice processed successfully
+2026-01-16 11:33:34,430 | INFO | __main__ | Database initialized successfully
+2026-01-16 11:33:34,430 | INFO | __main__ | Extracting text...
+2026-01-16 11:33:34,466 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 11:33:46,309 | ERROR | app.utils.date_utils | Invalid date format: 25/09/2025
+2026-01-16 11:33:46,309 | INFO | __main__ | Validating invoice...
+2026-01-16 11:33:46,312 | ERROR | __main__ | Invoice invalid:['Missing invoice_number']
+NoneType: None
+2026-01-16 11:34:51,803 | INFO | __main__ | Database initialized successfully
+2026-01-16 11:34:51,803 | INFO | __main__ | Extracting text...
+2026-01-16 11:34:54,392 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 11:35:01,770 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-16 11:35:01,770 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-16 11:35:01,770 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-16 11:35:01,770 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-16 11:35:01,770 | INFO | __main__ | Validating invoice...
+2026-01-16 11:35:01,775 | INFO | __main__ | Enriching invoice...
+2026-01-16 11:35:01,775 | INFO | __main__ | Loading invoice Excel data...
+2026-01-16 11:35:02,024 | INFO | __main__ | Querying Excel data with LLM agent...
+2026-01-16 11:35:30,461 | INFO | __main__ | Executing Excel query...
+2026-01-16 11:35:30,461 | INFO | __main__ | Merging invoice data...
+2026-01-16 11:35:30,461 | INFO | __main__ | Saving invoice to database...
+2026-01-16 11:35:30,461 | INFO | app.db.database | Saving invoice to database
+2026-01-16 11:35:30,475 | INFO | app.db.database | Updating existing invoice SCN-2025-001
+2026-01-16 11:35:30,537 | INFO | __main__ | Invoice processed successfully

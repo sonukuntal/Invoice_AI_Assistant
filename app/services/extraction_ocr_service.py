@@ -1,6 +1,6 @@
 from pdf2image import convert_from_path
 import pytesseract
-from config import DPI
+from app.config import DPI
 
 def extract_text_ocr(pdf_path):
     pages = convert_from_path(

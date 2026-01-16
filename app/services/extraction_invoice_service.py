@@ -1,10 +1,12 @@
 import json
-import logging
+from app.utils import get_logger
 import ollama
 from datetime import date,datetime
-from utils.date_utils import parse_date
-from config import LLM_MODEL_NAME
-from models.invoice_schema import InvoiceSchema
+from app.utils.date_utils import parse_date
+from app.config import LLM_MODEL_NAME
+from app.models.invoice_schema import InvoiceSchema
+
+logging = get_logger(__name__)
 
 
 def _empty_invoice_schema() -> InvoiceSchema:
@@ -76,5 +78,5 @@ Invoice text:
             return _empty_invoice_schema()
 
     except Exception as e:
-        logging.warning("Ollama call failed: %s", e)
+        logging.warning(f"Ollama call failed: {e}", exc_info=True)
         return _empty_invoice_schema()
