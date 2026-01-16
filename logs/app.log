@@ -230,3 +230,29 @@ NoneType: None
 2026-01-16 11:35:30,461 | INFO | app.db.database | Saving invoice to database
 2026-01-16 11:35:30,475 | INFO | app.db.database | Updating existing invoice SCN-2025-001
 2026-01-16 11:35:30,537 | INFO | __main__ | Invoice processed successfully
+2026-01-16 19:38:48,427 | INFO | __main__ | Database initialized successfully
+2026-01-16 19:38:48,429 | INFO | __main__ | Extracting text...
+2026-01-16 19:38:49,865 | INFO | __main__ | Extracting invoice data using LLM...
+2026-01-16 19:39:01,494 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-16 19:39:01,494 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-16 19:39:01,494 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-16 19:39:01,494 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-16 19:39:01,494 | INFO | __main__ | Validating invoice...
+2026-01-16 19:39:01,494 | INFO | __main__ | Enriching invoice...
+2026-01-16 19:39:01,494 | INFO | __main__ | Loading invoice Excel data...
+2026-01-16 19:39:01,718 | INFO | __main__ | Querying Excel data with LLM agent...
+2026-01-16 19:39:15,847 | INFO | __main__ | Executing Excel query...
+2026-01-16 19:39:15,847 | INFO | __main__ | Merging invoice data...
+2026-01-16 19:39:15,847 | INFO | __main__ | Saving invoice to database...
+2026-01-16 19:39:15,847 | INFO | app.db.database | Saving invoice to database
+2026-01-16 19:39:15,858 | INFO | app.db.database | Updating existing invoice SCN-2025-001
+2026-01-16 19:39:15,871 | INFO | __main__ | Invoice processed successfully
+2026-01-16 20:01:35,730 | INFO | __main__ | Database initialized successfully
+2026-01-16 20:01:35,745 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 45, in ask_invoice_question
+    return call_llm(prompt)
+           ^^^^^^^^^^^^^^^^
+TypeError: call_llm() missing 1 required positional argument: 'user_prompt'
+2026-01-16 20:05:04,574 | INFO | __main__ | Database initialized successfully
+2026-01-16 20:05:48,253 | INFO | __main__ | Database initialized successfully

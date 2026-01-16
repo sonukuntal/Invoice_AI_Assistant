@@ -1,10 +1,9 @@
 import json
 from app.utils import get_logger
-import ollama
 from datetime import date,datetime
 from app.utils.date_utils import parse_date
-from app.config import LLM_MODEL_NAME
 from app.models.invoice_schema import InvoiceSchema
+from app.utils.llm_client import call_llm
 
 logging = get_logger(__name__)
 
@@ -47,18 +46,9 @@ Invoice text:
 """
 
     try:
-        response = ollama.chat(
-            model=LLM_MODEL_NAME,
-            messages=[
-                {"role": "system", "content": "Extract structured invoice data."},
-                {"role": "user", "content": prompt}
-            ]
-        )
-
-        content = response["message"]["content"]
-
+        response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
         try:
-            raw_data = json.loads(content)
+            raw_data = json.loads(response)
 
             # Convert string date → date object (important)
             if raw_data.get("invoice_date"):

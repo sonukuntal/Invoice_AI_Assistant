@@ -11,6 +11,7 @@ from app.services.extraction_invoice_service import extract_invoice_data_llm
 from app.db.database import init_db, save_invoice
 from datetime import date
 from app.utils.logger import get_logger
+from app.services.invoice_llm_service import ask_invoice_question
 
 
 
@@ -50,5 +51,9 @@ if __name__ == "__main__":
     logger = get_logger(__name__)
     init_db()
     logger.info("Database initialized successfully")
-    result = process_invoice(INVOICE_PDF_DIR)
-    print(result)
+    #result = process_invoice(INVOICE_PDF_DIR)
+    answer = ask_invoice_question(
+    "INV-1003",
+    "What is the total amount and payment status?"
+)
+    print(answer)

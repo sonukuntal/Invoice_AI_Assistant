@@ -1,7 +1,7 @@
 import logging
-import ollama
 import json
-from app.utils.llm_utils import safe_json_parse
+from app.utils.jsonparse import safe_json_parse
+from app.utils.llm_client import call_llm
 
 def llm_excel_query_agent(invoice, df):
     prompt = f"""
@@ -41,15 +41,8 @@ Return JSON:
   "fields_to_return": ["Payment Status", "Due Date", "Shipping Ref"]
 }}
 """
-    response = ollama.chat(
-        model="qwen2.5:1.5b",
-        messages=[{"role": "user", "content": prompt}]
-    )
-
-    content = response["message"]["content"]
-
-    parsed = safe_json_parse(content)
-
+    response = call_llm(system_prompt="Analyze Excel data and extract relevant fields.", user_prompt=prompt)
+    parsed = safe_json_parse(response)
     if not parsed:
         logging.warning("LLM failed to return valid agent plan. Falling back.")
         return {

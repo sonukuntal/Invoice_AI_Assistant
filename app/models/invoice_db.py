@@ -5,6 +5,8 @@ Base = declarative_base()
 
 class Invoice(Base):
     __tablename__ = "invoices"
+    def __init__(self, text):
+        self.text = text
 
     id = Column(Integer, primary_key=True)
     invoice_number = Column(String, unique=True, index=True)
