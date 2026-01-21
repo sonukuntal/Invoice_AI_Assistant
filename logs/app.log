@@ -256,3 +256,1869 @@ Traceback (most recent call last):
 TypeError: call_llm() missing 1 required positional argument: 'user_prompt'
 2026-01-16 20:05:04,574 | INFO | __main__ | Database initialized successfully
 2026-01-16 20:05:48,253 | INFO | __main__ | Database initialized successfully
+2026-01-17 15:10:53,762 | INFO | __main__ | Database initialized successfully
+2026-01-17 16:34:30,454 | INFO | app.main | Extracting text...
+2026-01-17 16:34:30,519 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 16:34:41,484 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-17 16:34:41,484 | INFO | app.main | Validating invoice...
+2026-01-17 16:34:41,484 | INFO | app.main | Enriching invoice...
+2026-01-17 16:34:41,484 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 16:34:42,114 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 16:34:58,938 | INFO | app.main | Executing Excel query...
+2026-01-17 16:34:58,939 | INFO | app.main | Merging invoice data...
+2026-01-17 16:34:58,939 | INFO | app.main | Saving invoice to database...
+2026-01-17 16:34:58,939 | INFO | app.db.database | Saving invoice to database
+2026-01-17 16:34:59,004 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-17 16:34:59,034 | INFO | app.main | Invoice processed successfully
+2026-01-17 16:37:55,602 | INFO | app.main | Extracting text...
+2026-01-17 16:37:55,671 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 16:38:03,430 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-17 16:38:03,430 | INFO | app.main | Validating invoice...
+2026-01-17 16:38:03,430 | INFO | app.main | Enriching invoice...
+2026-01-17 16:38:03,430 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 16:38:03,727 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 16:38:19,067 | INFO | app.main | Executing Excel query...
+2026-01-17 16:38:19,067 | INFO | app.main | Merging invoice data...
+2026-01-17 16:38:19,067 | INFO | app.main | Saving invoice to database...
+2026-01-17 16:38:19,067 | INFO | app.db.database | Saving invoice to database
+2026-01-17 16:38:19,083 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-17 16:38:19,126 | INFO | app.main | Invoice processed successfully
+2026-01-17 16:40:54,550 | INFO | app.main | Extracting text...
+2026-01-17 16:40:54,601 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 16:41:02,875 | ERROR | app.utils.date_utils | Invalid date format: 20/09/2025
+2026-01-17 16:41:02,876 | INFO | app.main | Validating invoice...
+2026-01-17 16:41:02,876 | INFO | app.main | Enriching invoice...
+2026-01-17 16:41:02,876 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 16:41:02,876 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 16:41:17,926 | INFO | app.main | Executing Excel query...
+2026-01-17 16:41:17,926 | INFO | app.main | Merging invoice data...
+2026-01-17 16:41:17,926 | INFO | app.main | Saving invoice to database...
+2026-01-17 16:41:17,926 | INFO | app.db.database | Saving invoice to database
+2026-01-17 16:41:17,926 | INFO | app.db.database | Updating existing invoice INV-1002
+2026-01-17 16:41:17,939 | INFO | app.main | Invoice processed successfully
+2026-01-17 16:49:41,493 | INFO | app.main | Extracting text...
+2026-01-17 16:49:41,556 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 16:49:51,602 | ERROR | app.utils.date_utils | Invalid date format: 25/09/2025
+2026-01-17 16:49:51,602 | INFO | app.main | Validating invoice...
+2026-01-17 16:49:51,602 | INFO | app.main | Enriching invoice...
+2026-01-17 16:49:51,602 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 16:49:52,019 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 16:50:07,560 | INFO | app.main | Executing Excel query...
+2026-01-17 16:50:07,560 | INFO | app.main | Merging invoice data...
+2026-01-17 16:50:07,560 | INFO | app.main | Saving invoice to database...
+2026-01-17 16:50:07,566 | INFO | app.db.database | Saving invoice to database
+2026-01-17 16:50:07,603 | INFO | app.db.database | Updating existing invoice INV-1003
+2026-01-17 16:50:07,620 | INFO | app.main | Invoice processed successfully
+2026-01-17 16:57:10,864 | INFO | app.main | Extracting text...
+2026-01-17 16:57:10,939 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 16:57:21,078 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-17 16:57:21,078 | INFO | app.main | Validating invoice...
+2026-01-17 16:57:21,078 | INFO | app.main | Enriching invoice...
+2026-01-17 16:57:21,078 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 16:57:21,180 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 16:57:37,037 | INFO | app.main | Executing Excel query...
+2026-01-17 16:57:37,043 | INFO | app.main | Merging invoice data...
+2026-01-17 16:57:37,043 | INFO | app.main | Saving invoice to database...
+2026-01-17 16:57:37,043 | INFO | app.db.database | Saving invoice to database
+2026-01-17 16:57:37,071 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-17 16:57:37,118 | INFO | app.main | Invoice processed successfully
+2026-01-17 17:02:10,280 | INFO | app.main | Extracting text...
+2026-01-17 17:02:10,336 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 17:02:17,855 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-17 17:02:17,855 | INFO | app.main | Validating invoice...
+2026-01-17 17:02:17,855 | INFO | app.main | Enriching invoice...
+2026-01-17 17:02:17,855 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 17:02:18,239 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 17:02:32,917 | INFO | app.main | Executing Excel query...
+2026-01-17 17:02:32,917 | INFO | app.main | Merging invoice data...
+2026-01-17 17:02:32,919 | INFO | app.main | Saving invoice to database...
+2026-01-17 17:02:32,921 | INFO | app.db.database | Saving invoice to database
+2026-01-17 17:02:32,938 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-17 17:02:32,989 | INFO | app.main | Invoice processed successfully
+2026-01-17 17:02:33,019 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.id AS invoices_id, invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.invoice_date AS invoices_invoice_date, invoices.total_amount AS invoices_total_amount, invoices.risk_score AS invoices_risk_score, invoices.payment_status AS invoices_payment_status, invoices.due_date AS invoices_due_date, invoices.shipping_reference AS invoices_shipping_reference, invoices.vendor_category AS invoices_vendor_category, invoices.currency AS invoices_currency, invoices.status AS invoices_status 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'risk_score': 'LOW', 'vendor_category': 'STANDARD', 'payment_status': None, 'due_date': None, 'shipping_reference': None}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-17 17:03:19,045 | INFO | app.main | Extracting text...
+2026-01-17 17:03:19,102 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 17:03:26,599 | ERROR | app.utils.date_utils | Invalid date format: 15/09/2025
+2026-01-17 17:03:26,599 | INFO | app.main | Validating invoice...
+2026-01-17 17:03:26,599 | INFO | app.main | Enriching invoice...
+2026-01-17 17:03:26,603 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 17:03:26,605 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 17:03:43,206 | INFO | app.main | Executing Excel query...
+2026-01-17 17:03:43,206 | INFO | app.main | Merging invoice data...
+2026-01-17 17:03:43,206 | INFO | app.main | Saving invoice to database...
+2026-01-17 17:03:43,206 | INFO | app.db.database | Saving invoice to database
+2026-01-17 17:03:43,215 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-17 17:03:43,241 | INFO | app.main | Invoice processed successfully
+2026-01-17 17:03:43,275 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.id AS invoices_id, invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.invoice_date AS invoices_invoice_date, invoices.total_amount AS invoices_total_amount, invoices.risk_score AS invoices_risk_score, invoices.payment_status AS invoices_payment_status, invoices.due_date AS invoices_due_date, invoices.shipping_reference AS invoices_shipping_reference, invoices.vendor_category AS invoices_vendor_category, invoices.currency AS invoices_currency, invoices.status AS invoices_status 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'risk_score': 'LOW', 'vendor_category': 'STANDARD', 'payment_status': 'Unpaid', 'due_date': '2025-10-10', 'shipping_reference': None}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-17 17:05:52,994 | INFO | app.main | Extracting text...
+2026-01-17 18:01:40,740 | INFO | app.main | Extracting text...
+2026-01-17 18:01:42,564 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 18:01:54,144 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-17 18:01:54,144 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-17 18:01:54,144 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-17 18:01:54,144 | ERROR | app.utils.date_utils | Invalid date format: 18-09-2025
+2026-01-17 18:01:54,144 | INFO | app.main | Validating invoice...
+2026-01-17 18:01:54,144 | INFO | app.main | Enriching invoice...
+2026-01-17 18:01:54,144 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 18:01:54,659 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 18:02:09,438 | INFO | app.main | Executing Excel query...
+2026-01-17 18:02:09,438 | INFO | app.main | Merging invoice data...
+2026-01-17 18:02:09,438 | INFO | app.main | Saving invoice to database...
+2026-01-17 18:02:09,441 | INFO | app.db.database | Saving invoice to database
+2026-01-17 18:02:09,479 | INFO | app.db.database | Updating existing invoice SCN-2025-001
+2026-01-17 18:02:09,496 | INFO | app.main | Invoice processed successfully
+2026-01-17 18:02:09,522 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.id AS invoices_id, invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.invoice_date AS invoices_invoice_date, invoices.total_amount AS invoices_total_amount, invoices.risk_score AS invoices_risk_score, invoices.payment_status AS invoices_payment_status, invoices.due_date AS invoices_due_date, invoices.shipping_reference AS invoices_shipping_reference, invoices.vendor_category AS invoices_vendor_category, invoices.currency AS invoices_currency, invoices.status AS invoices_status 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'risk_score': 'LOW', 'vendor_category': 'STANDARD', 'payment_status': None, 'due_date': None, 'shipping_reference': None}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-17 18:30:19,382 | INFO | app.main | Extracting text...
+2026-01-17 18:30:21,210 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 18:30:32,614 | INFO | app.main | Validating invoice...
+2026-01-17 18:30:32,614 | INFO | app.main | Enriching invoice...
+2026-01-17 18:30:32,614 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 18:30:33,029 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 18:30:50,480 | INFO | app.main | Executing Excel query...
+2026-01-17 18:30:50,480 | INFO | app.main | Merging invoice data...
+2026-01-17 18:30:50,480 | INFO | app.main | Saving invoice to database...
+2026-01-17 18:30:50,480 | INFO | app.db.database | Saving invoice to database
+2026-01-17 18:30:50,534 | INFO | app.db.database | Updating existing invoice SCN-2025-001
+2026-01-17 18:30:50,546 | INFO | app.main | Invoice processed successfully
+2026-01-17 18:30:50,564 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.id AS invoices_id, invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.invoice_date AS invoices_invoice_date, invoices.total_amount AS invoices_total_amount, invoices.risk_score AS invoices_risk_score, invoices.payment_status AS invoices_payment_status, invoices.due_date AS invoices_due_date, invoices.shipping_reference AS invoices_shipping_reference, invoices.vendor_category AS invoices_vendor_category, invoices.currency AS invoices_currency, invoices.status AS invoices_status 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'risk_score': 'LOW', 'vendor_category': 'STANDARD', 'payment_status': 'Unpaid', 'due_date': '2025-10-10', 'shipping_reference': None}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-17 19:16:43,009 | INFO | app.main | Extracting text...
+2026-01-17 19:16:43,062 | INFO | app.main | Extracted text: Invoice Number: INV-1001
+Account Number: ACC-9001
+Customer Name: John Doe
+Invoice Date: 15/09/2025
+Total Amount: $1,250.00
+2026-01-17 19:16:43,066 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 19:16:53,835 | INFO | app.main | Extracted invoice data: invoice_number='INV-1001' vendor_name=None customer_name='John Doe' invoice_date=datetime.date(2025, 9, 15) due_date=None payment_status=None total_amount=1250.0 currency='$'
+2026-01-17 19:16:53,839 | INFO | app.main | Validating invoice...
+2026-01-17 19:16:53,839 | INFO | app.main | validation data:invoice_number='INV-1001' vendor_name=None customer_name='John Doe' invoice_date=datetime.date(2025, 9, 15) due_date=None payment_status=None total_amount=1250.0 currency='$'
+2026-01-17 19:16:53,839 | INFO | app.main | Enriching invoice...
+2026-01-17 19:16:53,839 | INFO | app.main | Enriched invoice data: invoice=InvoiceSchema(invoice_number='INV-1001', vendor_name=None, customer_name='John Doe', invoice_date=datetime.date(2025, 9, 15), due_date=None, payment_status=None, total_amount=1250.0, currency='$') risk_score='LOW' vendor_category='STANDARD'
+2026-01-17 19:16:53,839 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 19:16:53,995 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 19:17:10,070 | INFO | app.main | Executing Excel query...
+2026-01-17 19:17:10,071 | INFO | app.main | Merging invoice data...
+2026-01-17 19:17:10,071 | INFO | app.main | Saving invoice to database...
+2026-01-17 19:17:10,071 | INFO | app.db.database | Saving invoice to database
+2026-01-17 19:17:10,091 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-17 19:17:10,102 | INFO | app.main | Invoice processed successfully
+2026-01-17 19:17:10,104 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.id AS invoices_id, invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.invoice_date AS invoices_invoice_date, invoices.total_amount AS invoices_total_amount, invoices.risk_score AS invoices_risk_score, invoices.payment_status AS invoices_payment_status, invoices.due_date AS invoices_due_date, invoices.shipping_reference AS invoices_shipping_reference, invoices.vendor_category AS invoices_vendor_category, invoices.currency AS invoices_currency, invoices.status AS invoices_status 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'risk_score': 'LOW', 'vendor_category': 'STANDARD', 'payment_status': 'Unpaid', 'due_date': '2025-10-10', 'shipping_reference': None}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-17 19:21:29,869 | INFO | app.main | Extracting text...
+2026-01-17 19:21:29,925 | INFO | app.main | Extracted text: Invoice Number: INV-1001
+Account Number: ACC-9001
+Customer Name: John Doe
+Invoice Date: 15/09/2025
+Total Amount: $1,250.00
+2026-01-17 19:21:29,927 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 19:21:37,563 | INFO | app.main | Extracted invoice data: invoice_number='INV-1001' vendor_name=None customer_name='John Doe' invoice_date=datetime.date(2025, 9, 15) due_date=None payment_status=None total_amount=1250.0 currency='USD'
+2026-01-17 19:21:37,563 | INFO | app.main | Validating invoice...
+2026-01-17 19:21:37,563 | INFO | app.main | validation data:invoice_number='INV-1001' vendor_name=None customer_name='John Doe' invoice_date=datetime.date(2025, 9, 15) due_date=None payment_status=None total_amount=1250.0 currency='USD'
+2026-01-17 19:21:37,563 | INFO | app.main | Enriching invoice...
+2026-01-17 19:21:37,563 | INFO | app.main | Enriched invoice data: invoice=InvoiceSchema(invoice_number='INV-1001', vendor_name=None, customer_name='John Doe', invoice_date=datetime.date(2025, 9, 15), due_date=None, payment_status=None, total_amount=1250.0, currency='USD') risk_score='LOW' vendor_category='STANDARD'
+2026-01-17 19:21:37,563 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 19:21:37,828 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 19:21:53,514 | INFO | app.main | Executing Excel query...
+2026-01-17 19:21:53,514 | INFO | app.main | Merging invoice data...
+2026-01-17 19:21:53,514 | INFO | app.main | Saving invoice to database...
+2026-01-17 19:21:53,514 | INFO | app.db.database | Saving invoice to database
+2026-01-17 19:21:53,526 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-17 19:21:53,565 | INFO | app.main | Invoice processed successfully
+2026-01-17 19:21:53,595 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.id AS invoices_id, invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.invoice_date AS invoices_invoice_date, invoices.total_amount AS invoices_total_amount, invoices.risk_score AS invoices_risk_score, invoices.payment_status AS invoices_payment_status, invoices.due_date AS invoices_due_date, invoices.shipping_reference AS invoices_shipping_reference, invoices.vendor_category AS invoices_vendor_category, invoices.currency AS invoices_currency, invoices.status AS invoices_status 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'risk_score': 'LOW', 'vendor_category': 'STANDARD', 'payment_status': 'Unpaid', 'due_date': '2025-10-10', 'shipping_reference': None}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-17 19:26:18,379 | INFO | app.main | Extracting text...
+2026-01-17 19:26:18,440 | INFO | app.main | Extracted text: Invoice Number: INV-1001
+Account Number: ACC-9001
+Customer Name: John Doe
+Invoice Date: 15/09/2025
+Total Amount: $1,250.00
+2026-01-17 19:26:18,441 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 19:26:25,932 | INFO | app.main | Extracted invoice data: invoice_number='INV-1001' vendor_name=None customer_name='John Doe' invoice_date=datetime.date(2025, 9, 15) due_date=None payment_status=None total_amount=1250.0 currency='$'
+2026-01-17 19:26:25,932 | INFO | app.main | Validating invoice...
+2026-01-17 19:26:25,932 | INFO | app.main | validation data:invoice_number='INV-1001' vendor_name=None customer_name='John Doe' invoice_date=datetime.date(2025, 9, 15) due_date=None payment_status=None total_amount=1250.0 currency='$'
+2026-01-17 19:26:25,932 | INFO | app.main | Enriching invoice...
+2026-01-17 19:26:25,932 | INFO | app.main | Enriched invoice data: invoice=InvoiceSchema(invoice_number='INV-1001', vendor_name=None, customer_name='John Doe', invoice_date=datetime.date(2025, 9, 15), due_date=None, payment_status=None, total_amount=1250.0, currency='$') risk_score='LOW' vendor_category='STANDARD'
+2026-01-17 19:26:25,932 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 19:26:26,205 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 19:26:42,401 | INFO | app.main | Executing Excel query...
+2026-01-17 19:26:42,401 | INFO | app.main | Excel data retrieved: {'ID': 1, 'Invoice Number': 'INV-1002', 'Vendor Name': 'ABC Technologies Pvt Ltd', 'Customer Name': nan, 'Total Amount': 4560, 'Currency': 'USD', 'Invoice Date': '2025-09-10', 'Due Date': '2025-10-10', 'Payment Status': 'Unpaid', 'Risk Score': 'MEDIUM'}
+2026-01-17 19:26:42,401 | INFO | app.main | Merging invoice data...
+2026-01-17 19:26:42,401 | INFO | app.main | Saving invoice to database...
+2026-01-17 19:26:42,401 | INFO | app.db.database | Saving invoice to database
+2026-01-17 19:26:42,409 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-17 19:26:42,421 | INFO | app.main | Invoice processed successfully
+2026-01-17 19:26:42,425 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.id AS invoices_id, invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.invoice_date AS invoices_invoice_date, invoices.total_amount AS invoices_total_amount, invoices.risk_score AS invoices_risk_score, invoices.payment_status AS invoices_payment_status, invoices.due_date AS invoices_due_date, invoices.shipping_reference AS invoices_shipping_reference, invoices.vendor_category AS invoices_vendor_category, invoices.currency AS invoices_currency, invoices.status AS invoices_status 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'risk_score': 'LOW', 'vendor_category': 'STANDARD', 'payment_status': 'Unpaid', 'due_date': '2025-10-10', 'shipping_reference': None}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-17 19:34:20,843 | INFO | app.main | Extracting text...
+2026-01-17 19:34:20,899 | INFO | app.main | Extracted text: Invoice Number: INV-1001
+Account Number: ACC-9001
+Customer Name: John Doe
+Invoice Date: 15/09/2025
+Total Amount: $1,250.00
+2026-01-17 19:34:20,902 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 19:34:31,208 | INFO | app.main | Extracted invoice data: invoice_number='INV-1001' vendor_name=None customer_name='John Doe' invoice_date=datetime.date(2025, 9, 15) due_date=None payment_status=None total_amount=1250.0 currency='USD'
+2026-01-17 19:34:31,208 | INFO | app.main | Validating invoice...
+2026-01-17 19:34:31,208 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 19:34:31,355 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 19:34:46,532 | INFO | app.main | Executing Excel query...
+2026-01-17 19:34:46,537 | INFO | app.main | Excel data retrieved: {'ID': 1, 'Invoice Number': 'INV-1002', 'Vendor Name': 'ABC Technologies Pvt Ltd', 'Customer Name': nan, 'Total Amount': 4560, 'Currency': 'USD', 'Invoice Date': '2025-09-10', 'Due Date': '2025-10-10', 'Payment Status': 'Unpaid', 'Risk Score': 'MEDIUM'}
+2026-01-17 19:34:46,537 | INFO | app.main | Merging invoice data...
+2026-01-17 19:34:46,537 | INFO | app.main | Saving invoice to database...
+2026-01-17 19:34:46,537 | INFO | app.db.database | Saving invoice to database
+2026-01-17 19:34:46,537 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 28, in save_invoice
+    base_invoice = invoice_dict.pop("invoice")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'invoice'
+2026-01-17 19:36:47,968 | INFO | app.main | Extracting text...
+2026-01-17 19:36:48,022 | INFO | app.main | Extracted text: Invoice Number: INV-1001
+Account Number: ACC-9001
+Customer Name: John Doe
+Invoice Date: 15/09/2025
+Total Amount: $1,250.00
+2026-01-17 19:36:48,024 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-17 19:36:55,581 | INFO | app.main | Extracted invoice data: invoice_number='INV-1001' vendor_name=None customer_name='John Doe' invoice_date=datetime.date(2025, 9, 15) due_date=None payment_status=None total_amount=1250.0 currency='$'
+2026-01-17 19:36:55,581 | INFO | app.main | Validating invoice...
+2026-01-17 19:36:55,581 | INFO | app.main | Loading invoice Excel data...
+2026-01-17 19:36:55,655 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-17 19:37:10,561 | INFO | app.main | Executing Excel query...
+2026-01-17 19:37:10,561 | INFO | app.main | Excel data retrieved: None
+2026-01-17 19:37:10,561 | INFO | app.main | Merging invoice data...
+2026-01-17 19:37:10,561 | INFO | app.main | Final invoice data: {'invoice_number': 'INV-1001', 'vendor_name': None, 'customer_name': 'John Doe', 'invoice_date': datetime.date(2025, 9, 15), 'due_date': None, 'payment_status': None, 'total_amount': 1250.0, 'currency': '$', 'shipping_reference': None}
+2026-01-17 19:37:10,561 | INFO | app.main | Saving invoice to database...
+2026-01-17 19:37:10,561 | INFO | app.main | Invoice processed successfully
+2026-01-17 19:37:10,627 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.id AS invoices_id, invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.invoice_date AS invoices_invoice_date, invoices.total_amount AS invoices_total_amount, invoices.risk_score AS invoices_risk_score, invoices.payment_status AS invoices_payment_status, invoices.due_date AS invoices_due_date, invoices.shipping_reference AS invoices_shipping_reference, invoices.vendor_category AS invoices_vendor_category, invoices.currency AS invoices_currency, invoices.status AS invoices_status 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'invoice_number': 'INV-1001', 'vendor_name': None, 'customer_name': 'John Doe', 'invoice_date': datetime.date(2025, 9, 15), 'due_date': None, 'payment_status': None, 'total_amount': 1250.0, 'currency': '$', 'shipping_reference': None}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-19 20:17:08,098 | INFO | app.main | Extracting text...
+2026-01-19 20:17:08,178 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:17:08,178 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:17:10,231 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:17:10,235 | WARNING | app.services.extraction_invoice_service | Ollama call failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\extraction_invoice_service.py", line 45, in extract_invoice_data_llm
+    response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:17:10,240 | INFO | app.main | Validating invoice...
+2026-01-19 20:18:36,810 | INFO | app.main | Extracting text...
+2026-01-19 20:18:36,906 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:18:36,906 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:18:38,949 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:18:38,952 | WARNING | app.services.extraction_invoice_service | Ollama call failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\extraction_invoice_service.py", line 45, in extract_invoice_data_llm
+    response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:18:38,952 | INFO | app.main | Validating invoice...
+2026-01-19 20:23:28,586 | INFO | app.main | Extracting text...
+2026-01-19 20:23:28,701 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:23:28,712 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:23:30,775 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:23:30,781 | WARNING | app.services.extraction_invoice_service | Ollama call failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\extraction_invoice_service.py", line 45, in extract_invoice_data_llm
+    response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:23:30,781 | INFO | app.main | Validating invoice...
+2026-01-19 20:23:45,283 | INFO | app.main | Extracting text...
+2026-01-19 20:23:45,350 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:23:45,350 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:23:47,389 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:23:47,394 | WARNING | app.services.extraction_invoice_service | Ollama call failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\extraction_invoice_service.py", line 45, in extract_invoice_data_llm
+    response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:23:47,394 | INFO | app.main | Validating invoice...
+2026-01-19 20:25:26,084 | INFO | app.main | Extracting text...
+2026-01-19 20:25:26,138 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:25:26,146 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:25:28,176 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:25:28,182 | WARNING | app.services.extraction_invoice_service | Ollama call failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\extraction_invoice_service.py", line 45, in extract_invoice_data_llm
+    response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:25:28,182 | INFO | app.main | Enriching invoice...
+2026-01-19 20:25:28,186 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:25:28,592 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:25:30,653 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:26:37,201 | INFO | app.main | Extracting text...
+2026-01-19 20:26:37,262 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:26:37,262 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:26:39,291 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:26:39,297 | WARNING | app.services.extraction_invoice_service | Ollama call failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\extraction_invoice_service.py", line 45, in extract_invoice_data_llm
+    response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:26:39,297 | INFO | app.main | Enriching invoice...
+2026-01-19 20:26:39,297 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:26:39,642 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:26:41,682 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:32:58,834 | INFO | app.main | Extracting text...
+2026-01-19 20:32:59,026 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:32:59,026 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:33:01,069 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:33:01,074 | WARNING | app.services.extraction_invoice_service | Ollama call failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\extraction_invoice_service.py", line 45, in extract_invoice_data_llm
+    response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:33:01,074 | INFO | app.main | Enriching invoice...
+2026-01-19 20:33:01,074 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:33:01,453 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:33:03,498 | ERROR | app.utils.llm_client | LLM call failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\utils\llm_client.py", line 9, in call_llm
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\ollama\_client.py", line 135, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-19 20:40:05,692 | INFO | app.main | Extracting text...
+2026-01-19 20:40:05,786 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:40:05,786 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:40:19,831 | INFO | app.main | Enriching invoice...
+2026-01-19 20:40:19,831 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:40:20,260 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:40:47,064 | INFO | app.main | Executing Excel query...
+2026-01-19 20:40:47,064 | INFO | app.main | Merging invoice data...
+2026-01-19 20:43:55,050 | INFO | app.main | Extracting text...
+2026-01-19 20:43:55,226 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:43:55,228 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:44:05,657 | INFO | app.main | Enriching invoice...
+2026-01-19 20:44:05,658 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:44:05,674 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:44:25,696 | INFO | app.main | Executing Excel query...
+2026-01-19 20:44:25,696 | INFO | app.main | Merging invoice data...
+2026-01-19 20:46:38,885 | INFO | app.main | Extracting text...
+2026-01-19 20:46:39,079 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:46:39,099 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:46:48,888 | INFO | app.main | Enriching invoice...
+2026-01-19 20:46:48,888 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:46:48,914 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:47:14,847 | WARNING | app.utils.jsonparse | Invalid JSON from LLM:
+```json
+{
+  "match_strategy": "invoice_number | customer_name",
+  "filters": {
+    "column": "Invoice Number", "value": "INV-1001"; 
+    "column": "Customer Name", value": "John Doe"
+  },
+  "fields_to_return": ["invoice_number", "vendor_name", "customer_name", "total_amount"]
+}
+```
+2026-01-19 20:47:14,849 | INFO | app.main | Executing Excel query...
+2026-01-19 20:47:14,849 | INFO | app.main | Merging invoice data...
+2026-01-19 20:48:18,840 | INFO | app.main | Extracting text...
+2026-01-19 20:48:18,920 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:48:18,920 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:48:28,822 | INFO | app.main | Enriching invoice...
+2026-01-19 20:48:28,825 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:48:29,235 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:48:55,175 | INFO | app.main | Executing Excel query...
+2026-01-19 20:48:55,175 | INFO | app.main | Merging invoice data...
+2026-01-19 20:55:34,055 | INFO | app.main | Extracting text...
+2026-01-19 20:55:34,148 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:55:34,148 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:55:47,564 | INFO | app.main | Enriching invoice...
+2026-01-19 20:55:47,572 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:55:48,014 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:56:15,181 | INFO | app.main | Executing Excel query...
+2026-01-19 20:56:15,222 | INFO | app.main | Merging invoice data...
+2026-01-19 20:57:00,978 | INFO | app.main | Extracting text...
+2026-01-19 20:57:01,122 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:57:01,122 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:57:10,645 | INFO | app.main | Enriching invoice...
+2026-01-19 20:57:10,645 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:57:10,651 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:57:30,200 | INFO | app.main | Executing Excel query...
+2026-01-19 20:57:30,200 | INFO | app.main | Merging invoice data...
+2026-01-19 20:58:06,194 | INFO | app.main | Extracting text...
+2026-01-19 20:58:06,250 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 20:58:06,252 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 20:58:16,734 | INFO | app.main | Enriching invoice...
+2026-01-19 20:58:16,737 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 20:58:17,058 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 20:58:42,107 | INFO | app.main | Executing Excel query...
+2026-01-19 20:58:42,107 | INFO | app.main | Merging invoice data...
+2026-01-19 20:58:42,107 | INFO | app.main | Saving invoice to database...
+2026-01-19 20:58:42,107 | INFO | app.db.database | Saving invoice to database
+2026-01-19 20:58:42,107 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 28, in save_invoice
+    base_invoice = invoice_dict.pop("invoice")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'invoice'
+2026-01-19 21:03:04,163 | INFO | app.main | Extracting text...
+2026-01-19 21:03:04,233 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 21:03:04,240 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 21:03:15,490 | INFO | app.main | Enriching invoice...
+2026-01-19 21:03:15,490 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 21:03:15,914 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 21:03:41,022 | INFO | app.main | Executing Excel query...
+2026-01-19 21:03:41,022 | INFO | app.main | Merging invoice data...
+2026-01-19 21:03:41,022 | INFO | app.main | Saving invoice to database...
+2026-01-19 21:03:41,022 | INFO | app.db.database | Saving invoice to database
+2026-01-19 21:03:41,092 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: invoices
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 34, in save_invoice
+    .one_or_none()
+     ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2785, in one_or_none
+    return self._iter().one_or_none()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: invoices
+[SQL: SELECT invoices.id AS invoices_id, invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.invoice_date AS invoices_invoice_date, invoices.total_amount AS invoices_total_amount, invoices.risk_score AS invoices_risk_score, invoices.payment_status AS invoices_payment_status, invoices.due_date AS invoices_due_date, invoices.shipping_reference AS invoices_shipping_reference, invoices.vendor_category AS invoices_vendor_category, invoices.currency AS invoices_currency, invoices.status AS invoices_status 
+FROM invoices 
+WHERE invoices.invoice_number = ?]
+[parameters: ('INV-1001',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-19 21:12:03,130 | INFO | app.main | Extracting text...
+2026-01-19 21:12:03,350 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 21:12:03,350 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 21:12:16,052 | INFO | app.main | Enriching invoice...
+2026-01-19 21:12:16,052 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 21:12:16,499 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 21:12:38,858 | INFO | app.main | Executing Excel query...
+2026-01-19 21:12:38,858 | INFO | app.main | Merging invoice data...
+2026-01-19 21:12:38,918 | INFO | app.main | Database initialized successfully
+2026-01-19 21:12:38,920 | INFO | app.main | Saving invoice to database...
+2026-01-19 21:12:38,920 | INFO | app.db.database | Saving invoice to database
+2026-01-19 21:12:38,951 | INFO | app.db.database | Inserting new invoice INV-1001
+2026-01-19 21:12:38,951 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 47, in save_invoice
+    invoice = Invoice(**final_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+TypeError: __init__() got an unexpected keyword argument 'invoice_number'
+2026-01-19 21:21:25,258 | INFO | app.main | Extracting text...
+2026-01-19 21:21:25,470 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 21:21:25,470 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 21:21:38,746 | INFO | app.main | Enriching invoice...
+2026-01-19 21:21:38,746 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 21:21:39,173 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 21:22:04,928 | INFO | app.main | Executing Excel query...
+2026-01-19 21:22:04,930 | INFO | app.main | Merging invoice data...
+2026-01-19 21:22:04,964 | INFO | app.main | Database initialized successfully
+2026-01-19 21:22:04,966 | INFO | app.main | Saving invoice to database...
+2026-01-19 21:22:04,966 | INFO | app.db.database | Saving invoice to database
+2026-01-19 21:22:04,981 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: invoices.pdfdata
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 34, in save_invoice
+    .one_or_none()
+     ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2785, in one_or_none
+    return self._iter().one_or_none()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: invoices.pdfdata
+[SQL: SELECT invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.total_amount AS invoices_total_amount, invoices.pdfdata AS invoices_pdfdata, invoices.excel_lookup AS invoices_excel_lookup, invoices.audit AS invoices_audit 
+FROM invoices 
+WHERE invoices.invoice_number = ?]
+[parameters: ('INV-1001',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-19 21:25:58,640 | INFO | app.main | Extracting text...
+2026-01-19 21:25:58,734 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 21:25:58,917 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 21:26:09,843 | INFO | app.main | Enriching invoice...
+2026-01-19 21:26:09,843 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 21:26:10,058 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 21:26:34,366 | INFO | app.main | Executing Excel query...
+2026-01-19 21:26:34,366 | INFO | app.main | Merging invoice data...
+2026-01-19 21:26:34,407 | INFO | app.main | Database initialized successfully
+2026-01-19 21:26:34,408 | INFO | app.main | Saving invoice to database...
+2026-01-19 21:26:34,408 | INFO | app.db.database | Saving invoice to database
+2026-01-19 21:26:34,423 | INFO | app.db.database | Inserting new invoice INV-1001
+2026-01-19 21:26:34,423 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 47, in save_invoice
+    invoice = Invoice(**final_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+TypeError: __init__() got an unexpected keyword argument 'invoice_number'
+2026-01-19 21:31:06,841 | INFO | app.main | Extracting text...
+2026-01-19 21:31:06,912 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 21:31:06,912 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 21:31:17,007 | INFO | app.main | Enriching invoice...
+2026-01-19 21:31:17,007 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 21:31:17,458 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 21:31:44,209 | INFO | app.main | Executing Excel query...
+2026-01-19 21:31:44,209 | INFO | app.main | Merging invoice data...
+2026-01-19 21:31:44,215 | INFO | app.main | Database initialized successfully
+2026-01-19 21:31:44,215 | INFO | app.main | Saving invoice to database...
+2026-01-19 21:31:44,215 | INFO | app.db.database | Saving invoice to database
+2026-01-19 21:31:44,232 | INFO | app.db.database | Inserting new invoice INV-1001
+2026-01-19 21:31:44,233 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 47, in save_invoice
+    invoice = Invoice(**final_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+TypeError: __init__() got an unexpected keyword argument 'invoice_number'
+2026-01-19 21:36:46,780 | INFO | app.main | Extracting text...
+2026-01-19 21:36:46,841 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-19 21:36:46,845 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-19 21:36:59,884 | INFO | app.main | Enriching invoice...
+2026-01-19 21:36:59,884 | INFO | app.main | Loading invoice Excel data...
+2026-01-19 21:37:00,328 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-19 21:37:22,149 | INFO | app.main | Executing Excel query...
+2026-01-19 21:37:22,151 | INFO | app.main | Merging invoice data...
+2026-01-19 21:37:22,212 | INFO | app.main | Database initialized successfully
+2026-01-19 21:37:22,213 | INFO | app.main | Saving invoice to database...
+2026-01-19 21:37:22,213 | INFO | app.db.database | Saving invoice to database
+2026-01-19 21:37:22,247 | INFO | app.db.database | Inserting new invoice INV-1001
+2026-01-19 21:37:22,253 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 48, in save_invoice
+    invoice = Invoice(**final_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+TypeError: __init__() got an unexpected keyword argument 'invoice_number'
+2026-01-21 19:43:37,628 | INFO | app.main | Extracting text...
+2026-01-21 19:43:37,736 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-21 19:43:37,758 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 19:43:51,952 | INFO | app.main | Enriching invoice...
+2026-01-21 19:43:51,954 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 19:43:52,489 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 19:44:20,169 | INFO | app.main | Executing Excel query...
+2026-01-21 19:44:20,176 | INFO | app.main | Merging invoice data...
+2026-01-21 19:44:20,312 | INFO | app.main | Database initialized successfully
+2026-01-21 19:44:20,330 | INFO | app.main | Saving invoice to database...
+2026-01-21 19:44:20,364 | INFO | app.db.database | Saving invoice to database
+2026-01-21 19:44:20,528 | INFO | app.db.database | Inserting new invoice INV-1001
+2026-01-21 19:44:20,576 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 48, in save_invoice
+    invoice = Invoice(**final_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+TypeError: __init__() got an unexpected keyword argument 'invoice_number'
+2026-01-21 19:56:25,056 | INFO | app.main | Extracting text...
+2026-01-21 19:56:25,117 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-21 19:56:25,119 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 19:56:38,760 | INFO | app.main | Enriching invoice...
+2026-01-21 19:56:38,761 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 19:56:39,226 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 19:57:04,576 | INFO | app.main | Executing Excel query...
+2026-01-21 19:57:04,581 | INFO | app.main | Merging invoice data...
+2026-01-21 19:57:04,614 | INFO | app.main | Database initialized successfully
+2026-01-21 19:57:04,615 | INFO | app.main | Saving invoice to database...
+2026-01-21 19:57:04,617 | INFO | app.db.database | Saving invoice to database
+2026-01-21 19:57:04,649 | INFO | app.db.database | Inserting new invoice INV-1001
+2026-01-21 19:57:04,665 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 5: type 'InvoiceSchema' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 51, in save_invoice
+    session.commit()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 5: type 'InvoiceSchema' is not supported
+[SQL: INSERT INTO invoices (invoice_number, vendor_name, customer_name, total_amount, pdfdata, excel_lookup, audit) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('INV-1001', None, 'John Doe', 1250.0, InvoiceSchema(invoice_number='INV-1001', vendor_name=None, customer_name='John Doe', payment_status=None, total_amount=1250.0), {'ID': 1, 'Invoice Number': 'INV-1002', 'Vendor Name': 'ABC Technologies Pvt Ltd', 'Customer Name': 'Harward', 'Total Amount': 4560, 'Currency': 'USD', 'Shipping Methods': 'Ground', 'Product': 'Chemical', 'Payment Status': 'Paid'}, {'processed_at': '2026-01-21T14:27:04.582305', 'source_files': {'pdf': 'tmp6dg0fjyh.pdf', 'excel': 'invoice_details.xlsx'}})]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-21 20:17:50,619 | INFO | app.main | Extracting text...
+2026-01-21 20:17:50,688 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-21 20:17:50,691 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:18:05,155 | INFO | app.main | Enriching invoice...
+2026-01-21 20:18:05,155 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:18:05,444 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:18:34,634 | INFO | app.main | Executing Excel query...
+2026-01-21 20:18:34,634 | INFO | app.main | Merging invoice data...
+2026-01-21 20:18:34,665 | INFO | app.main | Database initialized successfully
+2026-01-21 20:18:34,665 | INFO | app.main | Saving invoice to database...
+2026-01-21 20:18:34,665 | INFO | app.db.database | Saving invoice to database
+2026-01-21 20:18:34,696 | INFO | app.db.database | Inserting new invoice INV-1001
+2026-01-21 20:18:34,706 | ERROR | app.db.database | Database upsert failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 8: type 'WindowsPath' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\db\database.py", line 51, in save_invoice
+    session.commit()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 8: type 'WindowsPath' is not supported
+[SQL: INSERT INTO invoices (invoice_number, vendor_name, customer_name, total_amount, product, payment_status, pdf_name, excel_name, processed_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('INV-1001', None, 'John Doe', 1250.0, None, None, 'C:\\Users\\skyuv\\AppData\\Local\\Temp\\tmpwedukavi.pdf', WindowsPath('C:/Users/skyuv/Invoice_AI_Assistant/data/excels/invoice_details.xlsx'), '2026-01-21T14:48:34.634601')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-21 20:23:54,990 | INFO | app.main | Extracting text...
+2026-01-21 20:23:55,061 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-21 20:23:55,064 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:24:08,037 | INFO | app.main | Enriching invoice...
+2026-01-21 20:24:08,038 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:24:08,465 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:24:35,329 | INFO | app.main | Executing Excel query...
+2026-01-21 20:24:35,336 | INFO | app.main | Merging invoice data...
+2026-01-21 20:24:35,359 | INFO | app.main | Database initialized successfully
+2026-01-21 20:24:35,360 | INFO | app.main | Saving invoice to database...
+2026-01-21 20:24:35,361 | INFO | app.db.database | Saving invoice to database
+2026-01-21 20:24:35,380 | INFO | app.db.database | Inserting new invoice INV-1001
+2026-01-21 20:24:35,405 | INFO | app.main | Invoice processed successfully
+2026-01-21 20:24:35,423 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.total_amount AS invoices_total_amount, invoices.product AS invoices_product, invoices.payment_status AS invoices_payment_status, invoices.pdf_name AS invoices_pdf_name, invoices.excel_name AS invoices_excel_name, invoices.processed_at AS invoices_processed_at 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'invoice_number': 'INV-1001', 'vendor_name': None, 'customer_name': 'John Doe', 'payment_status': None, 'product': None, 'total_amount': 1250.0, 'pdf_name': 'tmp7qday8xa.pdf', 'excel_name': 'invoice_details.xlsx', 'processed_at': '2026-01-21T14:54:35.337843'}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-21 20:28:20,557 | INFO | app.main | Extracting text...
+2026-01-21 20:28:20,638 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-21 20:28:20,641 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:28:31,289 | INFO | app.main | Enriching invoice...
+2026-01-21 20:28:31,290 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:28:31,643 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:28:58,613 | INFO | app.main | Executing Excel query...
+2026-01-21 20:28:58,615 | INFO | app.main | Merging invoice data...
+2026-01-21 20:33:30,642 | INFO | app.main | Extracting text...
+2026-01-21 20:33:30,727 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-21 20:33:30,729 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:33:40,471 | INFO | app.main | Enriching invoice...
+2026-01-21 20:33:40,472 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:33:40,801 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:34:10,850 | INFO | app.main | Executing Excel query...
+2026-01-21 20:34:10,851 | INFO | app.main | Merging invoice data...
+2026-01-21 20:39:01,438 | INFO | app.main | Extracting text...
+2026-01-21 20:39:01,528 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-21 20:39:01,533 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:39:11,510 | INFO | app.main | Enriching invoice...
+2026-01-21 20:39:11,512 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:39:11,842 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:39:38,509 | INFO | app.main | Executing Excel query...
+2026-01-21 20:39:38,512 | INFO | app.main | Merging invoice data...
+2026-01-21 20:41:03,346 | INFO | app.main | Extracting text...
+2026-01-21 20:41:03,400 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-21 20:41:03,406 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:41:15,426 | INFO | app.main | Enriching invoice...
+2026-01-21 20:41:15,426 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:41:16,505 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:41:47,539 | INFO | app.main | Executing Excel query...
+2026-01-21 20:41:47,539 | INFO | app.main | Merging invoice data...
+2026-01-21 20:41:47,560 | INFO | app.main | Database initialized successfully
+2026-01-21 20:41:47,564 | INFO | app.main | Saving invoice to database...
+2026-01-21 20:41:47,564 | INFO | app.db.database | Saving invoice to database
+2026-01-21 20:41:47,584 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-21 20:41:47,616 | INFO | app.main | Invoice processed successfully
+2026-01-21 20:41:47,650 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.total_amount AS invoices_total_amount, invoices.product AS invoices_product, invoices.payment_status AS invoices_payment_status, invoices.pdf_name AS invoices_pdf_name, invoices.excel_name AS invoices_excel_name, invoices.processed_at AS invoices_processed_at 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'invoice_number': 'INV-1001', 'vendor_name': 'ABC Technologies Pvt Ltd', 'customer_name': 'John Doe', 'payment_status': 'Paid', 'product': 'Chemical', 'total_amount': 1250.0, 'pdf_name': 'tmp9c3scoyt.pdf', 'excel_name': 'invoice_details.xlsx', 'processed_at': '2026-01-21T15:11:47.539088'}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-21 20:42:49,510 | INFO | app.main | Extracting text...
+2026-01-21 20:42:49,568 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1002
+Customer Name: ABC Technologies Pvt Ltd
+Total Amount: $4560.00
+2026-01-21 20:42:49,570 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:42:59,327 | INFO | app.main | Enriching invoice...
+2026-01-21 20:42:59,330 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:42:59,354 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:43:24,530 | INFO | app.main | Executing Excel query...
+2026-01-21 20:43:24,531 | INFO | app.main | Merging invoice data...
+2026-01-21 20:44:53,761 | INFO | app.main | Extracting text...
+2026-01-21 20:44:53,856 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1002
+Customer Name: ABC Technologies Pvt Ltd
+Total Amount: $4560.00
+2026-01-21 20:44:53,857 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:45:03,937 | INFO | app.main | Enriching invoice...
+2026-01-21 20:45:03,938 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:45:03,957 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:45:31,306 | INFO | app.main | Executing Excel query...
+2026-01-21 20:45:31,324 | INFO | app.main | Merging invoice data...
+2026-01-21 20:47:17,679 | INFO | app.main | Extracting text...
+2026-01-21 20:47:17,748 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1002
+Customer Name: ABC Technologies Pvt Ltd
+Total Amount: $4560.00
+2026-01-21 20:47:17,751 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:47:27,173 | INFO | app.main | Enriching invoice...
+2026-01-21 20:47:27,173 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:47:27,449 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:47:53,045 | INFO | app.main | Executing Excel query...
+2026-01-21 20:47:53,047 | INFO | app.main | Merging invoice data...
+2026-01-21 20:47:53,047 | INFO | app.main | Database initialized successfully
+2026-01-21 20:47:53,047 | INFO | app.main | Saving invoice to database...
+2026-01-21 20:47:53,047 | INFO | app.db.database | Saving invoice to database
+2026-01-21 20:47:53,067 | INFO | app.db.database | Inserting new invoice INV-1002
+2026-01-21 20:47:53,090 | INFO | app.main | Invoice processed successfully
+2026-01-21 20:47:53,101 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.total_amount AS invoices_total_amount, invoices.product AS invoices_product, invoices.payment_status AS invoices_payment_status, invoices.pdf_name AS invoices_pdf_name, invoices.excel_name AS invoices_excel_name, invoices.processed_at AS invoices_processed_at 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'invoice_number': 'INV-1002', 'vendor_name': 'ABC Technologies Pvt Ltd', 'customer_name': 'ABC Technologies Pvt Ltd', 'payment_status': 'Paid', 'prod ... (6 characters truncated) ... 'Chemical', 'total_amount': 4560.0, 'pdf_name': 'tmpfnx0c7c9.pdf', 'excel_name': 'invoice_details.xlsx', 'processed_at': '2026-01-21T15:17:53.047360'}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-21 20:48:28,910 | INFO | app.main | Extracting text...
+2026-01-21 20:48:28,963 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1003
+Customer Name: Robert Industries
+Total Amount: $780.00
+2026-01-21 20:48:28,965 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:48:38,795 | INFO | app.main | Enriching invoice...
+2026-01-21 20:48:38,796 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:48:38,815 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:49:05,491 | INFO | app.main | Executing Excel query...
+2026-01-21 20:49:05,492 | INFO | app.main | Merging invoice data...
+2026-01-21 20:49:05,498 | INFO | app.main | Database initialized successfully
+2026-01-21 20:49:05,499 | INFO | app.main | Saving invoice to database...
+2026-01-21 20:49:05,501 | INFO | app.db.database | Saving invoice to database
+2026-01-21 20:49:05,510 | INFO | app.db.database | Inserting new invoice INV-1003
+2026-01-21 20:49:05,618 | INFO | app.main | Invoice processed successfully
+2026-01-21 20:49:05,657 | ERROR | app.services.invoice_llm_service | Invoice LLM query failed
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 1: type 'dict' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\skyuv\Invoice_AI_Assistant\app\services\invoice_llm_service.py", line 14, in ask_invoice_question
+    ).first()
+      ^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\skyuv\Invoice_AI_Assistant\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 1: type 'dict' is not supported
+[SQL: SELECT invoices.invoice_number AS invoices_invoice_number, invoices.vendor_name AS invoices_vendor_name, invoices.customer_name AS invoices_customer_name, invoices.total_amount AS invoices_total_amount, invoices.product AS invoices_product, invoices.payment_status AS invoices_payment_status, invoices.pdf_name AS invoices_pdf_name, invoices.excel_name AS invoices_excel_name, invoices.processed_at AS invoices_processed_at 
+FROM invoices 
+WHERE invoices.invoice_number = ?
+ LIMIT ? OFFSET ?]
+[parameters: ({'invoice_number': 'INV-1003', 'vendor_name': 'ABC Technologies Pvt Ltd', 'customer_name': 'Robert Industries', 'payment_status': 'Paid', 'product': 'Chemical', 'total_amount': 780.0, 'pdf_name': 'tmpujgh52bz.pdf', 'excel_name': 'invoice_details.xlsx', 'processed_at': '2026-01-21T15:19:05.494247'}, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-21 20:49:47,509 | INFO | app.main | Extracting text...
+2026-01-21 20:49:55,521 | INFO | app.main | Extracted text: INVOICE
+
+Invoice No: SCN-2025-001
+Account No ACC-7777
+Customer Name: SkyTech Solutions
+
+Invoice Date: 18-09-2025
+
+‘Subtotal $950.00
+Tax $95.00
+
+Total Amount $1,045.00
+
+2026-01-21 20:49:55,525 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 20:50:07,185 | INFO | app.main | Enriching invoice...
+2026-01-21 20:50:07,186 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 20:50:07,207 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 20:50:29,861 | INFO | app.main | Executing Excel query...
+2026-01-21 20:50:29,861 | INFO | app.main | Merging invoice data...
+2026-01-21 21:00:35,975 | INFO | app.main | Extracting text...
+2026-01-21 21:00:36,070 | INFO | app.main | Extracted text: INVOICE
+Invoice Number: INV-1001
+Customer Name: John Doe
+Total Amount: $1250.00
+2026-01-21 21:00:36,072 | INFO | app.main | Extracting invoice data using LLM...
+2026-01-21 21:00:49,077 | INFO | app.main | Enriching invoice...
+2026-01-21 21:00:49,077 | INFO | app.main | Loading invoice Excel data...
+2026-01-21 21:00:49,350 | INFO | app.main | Querying Excel data with LLM agent...
+2026-01-21 21:01:15,575 | INFO | app.main | Executing Excel query...
+2026-01-21 21:01:15,605 | INFO | app.main | Merging invoice data...
+2026-01-21 21:01:15,639 | INFO | app.main | Database initialized successfully
+2026-01-21 21:01:15,641 | INFO | app.main | Saving invoice to database...
+2026-01-21 21:01:15,642 | INFO | app.db.database | Saving invoice to database
+2026-01-21 21:01:15,664 | INFO | app.db.database | Updating existing invoice INV-1001
+2026-01-21 21:01:15,686 | INFO | app.main | Invoice processed successfully

@@ -6,8 +6,9 @@ class InvoiceSchema(BaseModel):
     invoice_number: Optional[str] = None
     vendor_name: Optional[str] = None
     customer_name: Optional[str] = None
-    invoice_date: Optional[date] = None
-    due_date: Optional[date] = None
     payment_status: Optional[str] = None
     total_amount: Optional[float] = None
-    currency: Optional[str] = None
+    product: Optional[str] = None
+    pdf_name: Optional[str] = None 
+    excel_name: Optional[str] = None
+    processed_at: Optional[date] = None

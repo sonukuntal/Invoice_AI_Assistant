@@ -6,7 +6,8 @@ logger = get_logger(__name__)
 
 def call_llm(system_prompt: str, user_prompt: str) -> str:
     try:
-        response = ollama.chat(
+        client = ollama.Client(host="http://127.0.0.1:11434")
+        response = client.chat(
             model=LLM_MODEL_NAME,
             messages=[
                 {"role": "system", "content": system_prompt},

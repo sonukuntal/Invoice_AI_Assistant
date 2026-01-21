@@ -24,18 +24,11 @@ def save_invoice(invoice_data: InvoiceSchema) -> Invoice:
             invoice_data if isinstance(invoice_data, dict)
             else invoice_data.model_dump()
         )
-
-        base_invoice = invoice_dict.pop("invoice")
-
-        final_data = {**base_invoice, **invoice_dict}
-
-        # Normalize dates
-        final_data["invoice_date"] = parse_date(final_data.get("invoice_date"))
-        final_data["due_date"] = parse_date(final_data.get("due_date"))
-
+        final_data = invoice_dict
         invoice_number = final_data["invoice_number"]
+        
 
-        # 🔍 Check if invoice already exists
+        # Check if invoice already exists
         existing_invoice = (
             session.query(Invoice)
             .filter(Invoice.invoice_number == invoice_number)

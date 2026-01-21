@@ -9,7 +9,6 @@ def enrich_invoice(invoice: InvoiceSchema) -> InvoiceEnrichmentResult:
         risk_score = "HIGH"
 
     return InvoiceEnrichmentResult(
-        invoice=invoice,
         risk_score=risk_score,
         vendor_category="STANDARD"
     )

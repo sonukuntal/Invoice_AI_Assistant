@@ -17,18 +17,9 @@ def ask_invoice_question(invoice_number: str, question: str) -> str:
             return f"Invoice {invoice_number} not found."
 
         invoice_context = f"""
-Invoice Number: {invoice.invoice_number}
-Customer: {invoice.customer_name}
-Vendor: {invoice.vendor_name}
-Invoice Date: {invoice.invoice_date}
-Due Date: {invoice.due_date}
-Total Amount: {invoice.total_amount}
-Currency: {invoice.currency}
-Payment Status: {invoice.payment_status}
-Risk Score: {invoice.risk_score}
-Shipping Ref: {invoice.shipping_reference}
-Status: {invoice.status}
-"""
+            Invoice Number: {invoice.invoice_number}
+            Customer: {invoice.customer_name}
+            """
 
         prompt = f"""
 You are an invoice assistant.

@@ -20,9 +20,7 @@ Extract the following fields from the invoice text below:
 
 - invoice_number
 - customer_name
-- invoice_date
 - total_amount
-- currency
 
 RULES:
 1. Return ONLY valid JSON
@@ -34,9 +32,7 @@ JSON format:
 {{
   "invoice_number": string | null,
   "customer_name": string | null,
-  "invoice_date": string | null,
-  "total_amount": number | null,
-  "currency": string | null
+  "total_amount": number | null
 }}
 
 Invoice text:
@@ -49,17 +45,6 @@ Invoice text:
         response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
         try:
             raw_data = json.loads(response)
-
-            # Convert string date → date object (important)
-            if raw_data.get("invoice_date"):
-                raw_data["invoice_date"] = parse_date(
-                raw_data.get("invoice_date")
-                )
-                if raw_data.get("due_date"):
-                    raw_data["due_date"] = parse_date(
-                    raw_data.get("due_date")
-                )
-
             #Return validated schema
             return InvoiceSchema(**raw_data)
 

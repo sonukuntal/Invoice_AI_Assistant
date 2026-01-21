@@ -38,7 +38,7 @@ Return JSON:
   "filters": {{
       "column": "value"
   }},
-  "fields_to_return": ["Payment Status", "Due Date", "Shipping Ref"]
+  "fields_to_return": ["All"]
 }}
 """
     response = call_llm(system_prompt="Analyze Excel data and extract relevant fields.", user_prompt=prompt)
