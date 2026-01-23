@@ -1,42 +1,17 @@
-from app.db.database import SessionLocal
-from app.models import Invoice
-from app.utils.llm_client import call_llm
-from app.utils import get_logger
+from app.services.query_parser_llm import parse_invoice_question
+from app.services.invoice_query_service import fetch_invoice_from_db
+from app.services.invoice_answer_llm import generate_invoice_answer
+from app.services.invoice_query_service import invoice_to_text
 
-logger = get_logger(__name__)
+def ask_invoice_question(question: str) -> str:
+    parsed = parse_invoice_question(question)
+    print(f"Parsed Question: {parsed}")
+    
 
+    invoices = fetch_invoice_from_db(parsed["intent"])   
+    if not invoices:
+        return "⚠️ No invoice found matching your query."
 
-def ask_invoice_question(invoice_number: str, question: str) -> str:
-    session = SessionLocal()
-    try:
-        invoice = session.query(Invoice).filter(
-            Invoice.invoice_number == invoice_number
-        ).first()
+    context = "\n\n".join(invoice_to_text(inv) for inv in invoices)
 
-        if not invoice:
-            return f"Invoice {invoice_number} not found."
-
-        invoice_context = f"""
-            Invoice Number: {invoice.invoice_number}
-            Customer: {invoice.customer_name}
-            """
-
-        prompt = f"""
-You are an invoice assistant.
-
-Invoice details:
-{invoice_context}
-
-Question:
-{question}
-
-Answer clearly and precisely.
-"""
-
-        return call_llm(system_prompt="You are an assistant that answers questions about invoices.", user_prompt=prompt)
-
-    except Exception:
-        logger.exception("Invoice LLM query failed")
-        return "Error while answering invoice question."
-    finally:
-        session.close()
+    return generate_invoice_answer(question, context)

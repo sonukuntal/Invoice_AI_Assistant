@@ -1,31 +1,26 @@
 from app.db.database import SessionLocal
 from app.models import Invoice
 
-def fetch_invoice_by_number(invoice_number: str) -> dict | None:
+def fetch_invoice_from_db(intent):
     session = SessionLocal()
     try:
-        invoice = (
-            session.query(Invoice)
-            .filter(Invoice.invoice_number == invoice_number)
-            .one_or_none()
-        )
+        if intent == "FETCH_ALL_INVOICES":
+            return session.query(Invoice).all()
 
-        if not invoice:
-            return None
+        query = session.query(Invoice)
 
-        return {
-            "invoice_number": invoice.invoice_number,
-            "vendor_name": invoice.vendor_name,
-            "customer_name": invoice.customer_name,
-            "invoice_date": str(invoice.invoice_date),
-            "due_date": str(invoice.due_date),
-            "payment_status": invoice.payment_status,
-            "total_amount": invoice.total_amount,
-            "currency": invoice.currency,
-            "risk_score": invoice.risk_score,
-            "vendor_category": invoice.vendor_category,
-            "shipping_reference": invoice.shipping_reference,
-            "status": invoice.status
-        }
+        results = query.all()
+        return results
+
     finally:
         session.close()
+def invoice_to_text(invoice: Invoice) -> str:
+    return (
+        f"Invoice Number: {invoice.invoice_number}\n"
+        f"Customer Name: {invoice.customer_name}\n"
+        f"Vendor Name: {invoice.vendor_name}\n"
+        f"total_amount: {invoice.total_amount}\n"
+        f"product: {invoice.product}\n"
+        f"payment_status: {invoice.payment_status}\n"
+        f"Processed At: {invoice.processed_at}\n"
+    )

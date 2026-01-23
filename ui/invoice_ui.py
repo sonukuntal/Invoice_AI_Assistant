@@ -104,11 +104,7 @@ question = st.text_input(
 if question and st.button("🧠 Ask AI", use_container_width=True):
     with st.spinner("Thinking..."):
         try:
-            answer = ask_invoice_question(
-                invoice_data=st.session_state.get("invoice_data"),
-                question=question
-            )
-
+            answer = ask_invoice_question(question=question)
             st.markdown("### 🤖 AI Answer")
             st.success(answer)
 
