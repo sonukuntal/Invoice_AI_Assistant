@@ -5,9 +5,6 @@ from app.services.invoice_query_service import invoice_to_text
 
 def ask_invoice_question(question: str) -> str:
     parsed = parse_invoice_question(question)
-    print(f"Parsed Question: {parsed}")
-    
-
     invoices = fetch_invoice_from_db(parsed["intent"])   
     if not invoices:
         return "⚠️ No invoice found matching your query."
