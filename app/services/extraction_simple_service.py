@@ -1,4 +1,5 @@
 import pdfplumber
+
 def extract_text_pdfplumber(pdf_path: str) -> str:
     text = ""
     with pdfplumber.open(pdf_path) as pdf:

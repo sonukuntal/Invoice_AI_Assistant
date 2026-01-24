@@ -7,7 +7,13 @@ def ask_invoice_question(question: str) -> str:
     parsed = parse_invoice_question(question)
     invoices = fetch_invoice_from_db(parsed["intent"])   
     if not invoices:
-        return "⚠️ No invoice found matching your query."
+        return (
+            "I can only answer questions related to the uploaded invoices.\n\n"
+            "Please ask something like:\n"
+            "- List all invoices\n"
+            "- What is the total amount for INV-1001?\n"
+            "- Which invoices are unpaid?"
+        )
 
     context = "\n\n".join(invoice_to_text(inv) for inv in invoices)
 

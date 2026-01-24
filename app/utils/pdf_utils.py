@@ -1,7 +1,6 @@
 import tempfile
-import os
 
-def save_uploaded_pdf(uploaded_file):
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
+def save_uploaded_file(uploaded_file, suffix):
+    with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
         tmp.write(uploaded_file.read())
         return tmp.name

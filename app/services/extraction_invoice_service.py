@@ -1,7 +1,5 @@
 import json
 from app.utils import get_logger
-from datetime import date,datetime
-from app.utils.date_utils import parse_date
 from app.models.invoice_schema import InvoiceSchema
 from app.utils.llm_client import call_llm
 
@@ -13,7 +11,7 @@ def _empty_invoice_schema() -> InvoiceSchema:
 
 
 def extract_invoice_data_llm(text: str) -> InvoiceSchema:
-    prompt = f"""
+    system_prompt = f"""
 You are an invoice extraction engine.
 
 Extract the following fields from the invoice text below:
@@ -34,15 +32,10 @@ JSON format:
   "customer_name": string | null,
   "total_amount": number | null
 }}
-
-Invoice text:
-\"\"\"
-{text}
-\"\"\"
 """
 
     try:
-        response = call_llm(system_prompt="Extract structured invoice data.", user_prompt=prompt)
+        response = call_llm(system_prompt=system_prompt, user_prompt=text)
         try:
             raw_data = json.loads(response)
             #Return validated schema

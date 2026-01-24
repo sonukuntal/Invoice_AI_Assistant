@@ -1,3 +1,4 @@
+import json
 from anyio import Path
 from app.services.excel_loader_service import load_invoice_excel
 from app.services.excel_agent_service import execute_excel_query, llm_excel_query_agent
@@ -6,10 +7,9 @@ from app.services.detectpdf_service import is_text_pdf
 from app.services.extraction_ocr_service import extract_text_ocr
 from app.services.extraction_simple_service import extract_text_pdfplumber
 from app.services.extraction_invoice_service import extract_invoice_data_llm
-from app.db.database import init_db, save_invoice
-from datetime import date
+from app.services.rag.rag_pipeline import index_invoice
 from app.utils.logger import get_logger
-from app.services.invoice_llm_service import ask_invoice_question
+from app.utils.metadata_id import invoice_to_id
 
 logger = get_logger(__name__)
 
@@ -19,27 +19,29 @@ def process_invoice(pdf_path: str, Excel_PATH: str):
         text= extract_text_pdfplumber(pdf_path)
     else:
         text= extract_text_ocr(pdf_path)
-    logger.info("Extracted text: %s", text)
+
     logger.info("Extracting invoice data using LLM...")
     invoice_data = extract_invoice_data_llm(text)
-    logger.info("Enriching invoice...")
     logger.info("Loading invoice Excel data...")
     excel_df = load_invoice_excel(Excel_PATH)
     logger.info("Querying Excel data with LLM agent...")
     agent_plan = llm_excel_query_agent(invoice_data, excel_df)
     logger.info("Executing Excel query...")
     excel_data = execute_excel_query(agent_plan, excel_df)
-
     logger.info("Merging invoice data...")
     pdf_name = Path(pdf_path).name if pdf_path else None
     excel_name = Path(Excel_PATH).name if Excel_PATH else None
-    final_invoice = build_final_invoice_output(invoice_data, excel_data, pdf_name, excel_name)   
-
-    init_db()
-    logger.info("Database initialized successfully") 
-    logger.info("Saving invoice to database...")
-    save_invoice(final_invoice)
+    final_invoice = build_final_invoice_output(invoice_data, excel_data, pdf_name, excel_name)
     logger.info("Invoice processed successfully")
+    index_invoice(
+    invoice_id=invoice_to_id(final_invoice.get("invoice_number")),
+    invoice_text=json.dumps(final_invoice),
+    invoice_metadata={
+        "invoice_number": final_invoice.get("invoice_number"),
+        "customer": final_invoice.get("customer_name"),
+        "total": final_invoice.get("total_amount")
+    }
+)
     return final_invoice
 
 if __name__ == "__main__":

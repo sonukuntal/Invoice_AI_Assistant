@@ -1,47 +1,34 @@
 import logging
-import json
 from app.utils.jsonparse import safe_json_parse
 from app.utils.llm_client import call_llm
 
 def llm_excel_query_agent(invoice, df):
     prompt = f"""
-You are an intelligent data assistant.
+You are an information extraction agent.
 
-You are given:
-1. Extracted invoice data
-2. Excel column names
-3. Sample rows from the Excel file
+Given the USER invoice, return a JSON object with ACTUAL VALUES.
 
-Your task:
-- Decide which Excel row best matches the invoice
-- Identify relevant fields to extract
+RULES:
+- Return ONLY JSON
+- Do NOT explain the schema
+- Do NOT use placeholders like "string | null"
+- Use null if value is unknown
+- If user asks for all invoices, use match_strategy = "none"
 
-Invoice Data:
-{invoice.model_dump()}
-
-Excel Columns:
-{list(df.columns)}
-
-Sample Excel Rows:
-{df.head(5).to_dict(orient="records")}
-
-Rules:
-- Match using Invoice Number, Account Number, or Customer Name
-- You must return ONLY valid JSON
-- Do NOT include markdown, explanations, or code fences.
-- Do NOT explain
-- If no match found, return null values
-
-Return JSON:
+JSON FORMAT:
 {{
-  "match_strategy": "invoice_number | account_number | customer_name | none",
+  "match_strategy": "invoice_number | customer_name | none",
   "filters": {{
-      "column": "value"
+    "invoice_number": null,
+    "customer_name": null
   }},
-  "fields_to_return": ["All"]
+  "fields_to_return": ["ALL"]
 }}
 """
-    response = call_llm(system_prompt="Analyze Excel data and extract relevant fields.", user_prompt=prompt)
+    response = call_llm(system_prompt=prompt, user_prompt=f"""
+Invoice JSON:
+{invoice.model_dump_json(indent=2)}
+""")
     parsed = safe_json_parse(response)
     if not parsed:
         logging.warning("LLM failed to return valid agent plan. Falling back.")
@@ -50,7 +37,6 @@ Return JSON:
             "filters": {},
             "fields_to_return": []
         }
-
     return parsed
 
 def execute_excel_query(agent_plan, df):

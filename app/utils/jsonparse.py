@@ -16,3 +16,4 @@ def safe_json_parse(text: str):
     except json.JSONDecodeError:
         logging.warning("Invalid JSON from LLM:\n%s", text)
         return None
+

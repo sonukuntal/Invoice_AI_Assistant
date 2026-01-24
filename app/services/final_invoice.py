@@ -6,6 +6,7 @@ def build_final_invoice_output(
     pdf_name: str,
     excel_name: str
 ):
+    excel_data = excel_data or {}
     return {
         "invoice_number": invoice_data.invoice_number,
         "vendor_name": excel_data.get("Vendor_Name"),
