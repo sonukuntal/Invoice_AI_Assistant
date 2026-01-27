@@ -4,7 +4,7 @@ from app.main import process_invoice
 import tempfile
 
 # -------------------------------------------------
-# Page config (ChatGPT feel)
+# Page configuration
 # -------------------------------------------------
 st.set_page_config(
     page_title="Invoice AI Assistant",
@@ -18,6 +18,14 @@ st.caption("Ask questions about your invoices")
 # -------------------------------------------------
 # Session state initialization
 # -------------------------------------------------
+import streamlit as st
+
+if "invoice_processed" not in st.session_state:
+    st.session_state.invoice_processed = False
+
+if "uploader_key" not in st.session_state:
+    st.session_state.uploader_key = 0
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
@@ -30,28 +38,53 @@ if "data_loaded" not in st.session_state:
 with st.sidebar:
     st.header("📂 Upload Files")
 
-    pdf_file = st.file_uploader("Upload Invoice PDF", type=["pdf"])
-    excel_file = st.file_uploader("Upload Invoice Excel", type=["xlsx"])
 
-    if st.button("Process Documents"):
-        if not pdf_file or not excel_file:
+    st.session_state.pdf_file = st.file_uploader(
+    "Upload Invoice PDF",
+    type=["pdf"],
+    key=f"pdf_{st.session_state.uploader_key}"
+)
+
+    st.session_state.excel_file = st.file_uploader(
+    "Upload Invoice Excel",
+    type=["xlsx"],
+    key=f"excel_{st.session_state.uploader_key}"
+)
+
+    pdf_name = st.session_state.pdf_file.name if st.session_state.pdf_file else None
+    excel_name = st.session_state.excel_file.name if st.session_state.excel_file else None
+
+    process_clicked = st.button(
+    "🚀 Process Invoice"
+)
+
+    if process_clicked:
+        if not st.session_state.pdf_file or not st.session_state.excel_file:
             st.warning("Please upload both PDF and Excel")
         else:
             with st.spinner("Processing invoices..."):
                 # Save PDF
                 with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_pdf:
-                    tmp_pdf.write(pdf_file.read())
+                    tmp_pdf.write(st.session_state.pdf_file.read())
                     pdf_path = tmp_pdf.name
 
                 # Save Excel
                 with tempfile.NamedTemporaryFile(delete=False, suffix=".xlsx") as tmp_excel:
-                    tmp_excel.write(excel_file.read())
+                    tmp_excel.write(st.session_state.excel_file.read())
                     excel_path = tmp_excel.name
 
-                process_invoice(pdf_path, excel_path)
+                process_invoice(pdf_path, excel_path, pdf_name, excel_name)
 
                 st.session_state.data_loaded = True
-                st.success("Invoices indexed successfully!")
+                st.success("Invoices processed successfully!")
+                st.session_state.invoice_processed = True
+
+                # Clear uploaders
+                st.session_state.uploader_key += 1
+                st.session_state.chat_ready = True
+
+                # Force UI refresh
+                st.rerun()
 
 # -------------------------------------------------
 # Chat history display

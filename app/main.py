@@ -13,7 +13,7 @@ from app.utils.metadata_id import invoice_to_id
 
 logger = get_logger(__name__)
 
-def process_invoice(pdf_path: str, Excel_PATH: str):
+def process_invoice(pdf_path: str, Excel_PATH: str,p_name: str, e_name: str):
     logger.info("Extracting text...")
     if is_text_pdf(pdf_path):
         text= extract_text_pdfplumber(pdf_path)
@@ -29,20 +29,21 @@ def process_invoice(pdf_path: str, Excel_PATH: str):
     logger.info("Executing Excel query...")
     excel_data = execute_excel_query(agent_plan, excel_df)
     logger.info("Merging invoice data...")
-    pdf_name = Path(pdf_path).name if pdf_path else None
-    excel_name = Path(Excel_PATH).name if Excel_PATH else None
-    final_invoice = build_final_invoice_output(invoice_data, excel_data, pdf_name, excel_name)
+    final_invoice = build_final_invoice_output(invoice_data, excel_data, p_name, e_name)
     logger.info("Invoice processed successfully")
-    index_invoice(
-    invoice_id=invoice_to_id(final_invoice.get("invoice_number")),
-    invoice_text=json.dumps(final_invoice),
-    invoice_metadata={
+    meta_id = invoice_to_id(final_invoice.get("invoice_number"))
+    if(meta_id is not None):
+        index_invoice(
+        invoice_id=meta_id,
+        invoice_text=json.dumps(final_invoice),
+        invoice_metadata={
         "invoice_number": final_invoice.get("invoice_number"),
         "customer": final_invoice.get("customer_name"),
         "total": final_invoice.get("total_amount")
     }
-)
-    return final_invoice
+    )
+    else:
+        logger.warning("I couldn't identify a valid invoice number.")
 
 if __name__ == "__main__":
     logger.info("Starting invoice processing...")

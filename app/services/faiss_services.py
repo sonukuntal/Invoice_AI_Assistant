@@ -1,6 +1,6 @@
 import faiss
 import numpy as np
-from app.utils.get_embeddings import get_embedding
+from app.utils import get_embedding
 from app.services.invoice_query_service import invoice_to_text
 
 DIMENSION = 768  # nomic-embed-text
